@@ -16,4 +16,5 @@ export const LogoElement = styled.div<{ variant: 'outlined' | 'filled' }>`
   border: 2px solid ${theme.primary.default};
   width: 100%;
   height: 100%;
+  border-radius: 2px;
 `
