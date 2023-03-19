@@ -3,6 +3,9 @@ const palette = {
   black: {
     primary: '#000000',
   },
+  grey: {
+    light: '#f2f2f2',
+  },
   teal: {
     primary: 'teal',
   },
@@ -12,7 +15,10 @@ const theme = {
   primary: {
     default: palette.teal.primary,
   },
-  background: {},
+  background: {
+    primary: palette.grey.light,
+    white: palette.white,
+  },
   border: {
     white: palette.white,
     black: palette.black.primary,

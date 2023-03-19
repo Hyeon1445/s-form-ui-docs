@@ -1,12 +1,12 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 
-const PlaygroundPage = () => {
+const ButtonPage = () => {
   return (
-    <Layout page={PageEnum.Playground}>
-      <div>playground</div>
+    <Layout page={PageEnum.Button}>
+      <div>button</div>
     </Layout>
   )
 }
 
-export default PlaygroundPage
+export default ButtonPage

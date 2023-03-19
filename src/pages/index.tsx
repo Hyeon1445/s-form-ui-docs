@@ -1,4 +1,4 @@
-import route from '@/constants/route'
+import route from '@constants/route'
 import styled from '@emotion/styled'
 import { useRouter } from 'next/router'
 

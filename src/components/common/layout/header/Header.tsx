@@ -1,18 +1,22 @@
+import Logo from '@components/common/logo'
 import { HStack } from '@components/common/stack'
-import { HeaderWrapper, Logo } from './Header.style'
+import * as S from './Header.style'
 
 const Header = () => {
   return (
-    <HeaderWrapper>
+    <S.HeaderWrapper>
       <HStack
         height="3rem"
         justifyContent="space-between"
         alignItems="center"
         padding="0 1rem"
       >
-        <Logo>Form UI</Logo>
+        <HStack gap="0.5rem">
+          <Logo />
+          <S.Title>Form UI</S.Title>
+        </HStack>
       </HStack>
-    </HeaderWrapper>
+    </S.HeaderWrapper>
   )
 }
 
