@@ -9,7 +9,7 @@ const FormBoxPage = () => {
         initialValues={{ value: 'value' }}
         style={{
           width: '10rem',
-          backgroundColor: 'yellow',
+          border: '2px solid #f2f2f2',
           padding: '1rem',
           margin: '1rem',
         }}
