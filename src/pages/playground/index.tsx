@@ -1,5 +1,11 @@
+import Layout from '@components/common/layout'
+
 const PlaygroundPage = () => {
-  return <div>playground </div>
+  return (
+    <Layout>
+      <div>playground</div>
+    </Layout>
+  )
 }
 
 export default PlaygroundPage
