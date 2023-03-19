@@ -1,3 +1,7 @@
 import styled from '@emotion/styled'
 
-const Container = styled.div``
+export const ChildrenWrapper = styled.div`
+  height: calc(100vh - 3rem);
+  width: calc(100vw - 12rem);
+  overflow: auto;
+`

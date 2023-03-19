@@ -3,6 +3,7 @@ import { HStack, VStack } from '../stack'
 import Header from './header'
 import Sidebar from './sidebar'
 import { PageEnum } from './sidebar/Sidebar'
+import * as S from './Layout.style'
 
 interface LayoutProps {
   children: ReactElement
@@ -15,7 +16,7 @@ const Layout = ({ children, page }: LayoutProps) => {
       <Header />
       <HStack>
         <Sidebar selectedTab={page} />
-        {children}
+        <S.ChildrenWrapper>{children}</S.ChildrenWrapper>
       </HStack>
     </VStack>
   )
