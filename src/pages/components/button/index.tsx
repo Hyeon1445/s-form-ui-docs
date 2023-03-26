@@ -13,7 +13,6 @@ const ButtonPage = () => {
           width: '20rem',
           border: '2px solid #f2f2f2',
           padding: '1rem',
-          margin: '1rem',
         }}
         onSubmit={(values) => console.log('submit', values)}
       >
