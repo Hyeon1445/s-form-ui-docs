@@ -15,6 +15,9 @@ const Header = () => {
           <Logo />
           <S.Title>Form UI</S.Title>
         </HStack>
+        <HStack gap="0.5rem">
+          <S.MoreIcon className="material-icons">more_vert</S.MoreIcon>
+        </HStack>
       </HStack>
     </S.HeaderWrapper>
   )

@@ -1,9 +1,14 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document() {
+const Document = () => {
   return (
-    <Html lang="en">
-      <Head />
+    <Html>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Symbols+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+          rel="stylesheet"
+        />
+      </Head>
       <body>
         <Main />
         <NextScript />
@@ -11,3 +16,5 @@ export default function Document() {
     </Html>
   )
 }
+
+export default Document

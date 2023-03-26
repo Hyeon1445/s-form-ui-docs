@@ -10,3 +10,14 @@ export const Title = styled.span`
   font-weight: 900;
   font-size: ${theme.fontSize.xl};
 `
+
+export const MoreIcon = styled.button`
+  color: ${theme.primary.default};
+  display: none;
+  &:hover {
+    opacity: 0.8;
+  }
+  @media screen and (max-width: ${theme.mobileMaxWidth}) {
+    display: block;
+  }
+`
