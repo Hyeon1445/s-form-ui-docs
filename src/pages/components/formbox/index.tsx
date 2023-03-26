@@ -1,6 +1,6 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-import Button from '@components/form/button'
+import Button from '@components/form/button/Button'
 import FormBox from '@components/form/formBox'
 import styled from '@emotion/styled'
 
