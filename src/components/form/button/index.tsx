@@ -1,3 +1,4 @@
+import styled from '@emotion/styled'
 import { CSSProperties, ReactNode } from 'react'
 
 const defaultStyle: CSSProperties = {
@@ -17,10 +18,16 @@ export type ButtonProps = {
 
 const Button = ({ children, style, type = 'submit' }: ButtonProps) => {
   return (
-    <button style={{ ...defaultStyle, ...style }} type={type}>
+    <Container style={{ ...defaultStyle, ...style }} type={type}>
       {children}
-    </button>
+    </Container>
   )
 }
+
+const Container = styled.button`
+  &:hover {
+    opacity: 0.8;
+  }
+`
 
 export default Button

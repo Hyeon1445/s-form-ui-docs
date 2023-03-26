@@ -1,25 +1,23 @@
 import { Form, Formik, FormikHelpers, FormikValues } from 'formik'
 import { CSSProperties, ReactNode } from 'react'
+import * as yup from 'yup'
 
 const defaultStyle: CSSProperties = {
   width: '100%',
 }
 
-export type FormBoxProps = {
+export type FormBoxProps<T> = {
   style?: CSSProperties
   children: ReactNode
-  initialValues: FormikValues
-  validationSchema?: any
+  initialValues: T
+  validationSchema?: yup.Schema<T>
   validateOnChange?: boolean
   validateOnBlur?: boolean
   validateOnMount?: boolean
-  onSubmit: (
-    values: FormikValues,
-    formikHelpers: FormikHelpers<FormikValues>
-  ) => void
+  onSubmit: (values: T, formikHelpers: FormikHelpers<T>) => void
 }
 
-const FormBox = ({
+const FormBox = <T extends FormikValues>({
   style,
   children,
   initialValues,
@@ -28,7 +26,7 @@ const FormBox = ({
   validateOnChange = true,
   validateOnBlur = true,
   validateOnMount = true,
-}: FormBoxProps) => {
+}: FormBoxProps<T>) => {
   return (
     <Formik
       initialValues={initialValues}
