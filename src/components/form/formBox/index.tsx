@@ -4,11 +4,15 @@ import { CSSProperties, ReactNode } from 'react'
 const defaultStyle: CSSProperties = {
   width: '100%',
 }
+
 interface FormBoxProps {
   style?: CSSProperties
   children: ReactNode
   initialValues: FormikValues
   validationSchema?: any
+  validateOnChange?: boolean
+  validateOnBlur?: boolean
+  validateOnMount?: boolean
   onSubmit: (
     values: FormikValues,
     formikHelpers: FormikHelpers<FormikValues>
@@ -21,12 +25,18 @@ const FormBox = ({
   initialValues,
   validationSchema,
   onSubmit,
+  validateOnChange = true,
+  validateOnBlur = true,
+  validateOnMount = true,
 }: FormBoxProps) => {
   return (
     <Formik
       initialValues={initialValues}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
+      validateOnBlur={validateOnBlur}
+      validateOnChange={validateOnChange}
+      validateOnMount={validateOnMount}
     >
       {(props) => (
         <Form>
