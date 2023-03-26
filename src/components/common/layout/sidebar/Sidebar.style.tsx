@@ -10,6 +10,9 @@ export const Container = styled.div`
   background-color: ${theme.background.primary};
   width: 12rem;
   position: relative;
+  @media screen and (max-width: ${theme.mobileMaxWidth}) {
+    display: none;
+  }
 `
 
 export const ComponentTab = styled.div<TabProps>`

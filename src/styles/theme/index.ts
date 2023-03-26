@@ -40,7 +40,7 @@ const theme = {
     xl: '1.25rem', // 20px
     xxl: '1.5rem', // 24rem
   },
-  minWidth: '1200px', // layout(tablet)
+  mobileMaxWidth: '768px',
 } as const
 
 export default theme
