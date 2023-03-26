@@ -5,7 +5,7 @@ const defaultStyle: CSSProperties = {
   width: '100%',
 }
 
-interface FormBoxProps {
+export type FormBoxProps = {
   style?: CSSProperties
   children: ReactNode
   initialValues: FormikValues
