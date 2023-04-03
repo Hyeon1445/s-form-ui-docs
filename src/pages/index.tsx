@@ -5,13 +5,15 @@ import { useRouter } from 'next/router'
 const Home = () => {
   const router = useRouter()
   return (
-    <Button
-      onClick={() => {
-        router.push(route.playground)
-      }}
-    >
-      playground
-    </Button>
+    <div>
+      <Button
+        onClick={() => {
+          router.push(route.playground)
+        }}
+      >
+        Get Started
+      </Button>
+    </div>
   )
 }
 
