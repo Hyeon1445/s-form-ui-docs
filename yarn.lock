@@ -2360,6 +2360,11 @@ rxjs@^7.8.0:
   dependencies:
     tslib "^2.1.0"
 
+s-form-ui@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/s-form-ui/-/s-form-ui-0.1.7.tgz#e389134f375798d99edadfb1b126fbb74573d81c"
+  integrity sha512-kKbZrR1SP96kBYWEmBJV9txx7lx/E6ZwmJnoFl/bKWdfd/DbY1lIfU+Z1l0CenD412oWGxHVKfCE8WApEdyKOw==
+
 safe-regex-test@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/safe-regex-test/-/safe-regex-test-1.0.0.tgz#793b874d524eb3640d1873aad03596db2d4f2295"

@@ -1,11 +1,13 @@
 import route from '@constants/route'
 import styled from '@emotion/styled'
 import { useRouter } from 'next/router'
+import { Sample } from 's-form-ui'
 
 const Home = () => {
   const router = useRouter()
   return (
     <div>
+      <Sample text="s-form-ui" />
       <Button
         onClick={() => {
           router.push(route.playground)
