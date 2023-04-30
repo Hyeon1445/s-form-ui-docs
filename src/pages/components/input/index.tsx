@@ -9,7 +9,7 @@ const InputPage = () => {
   return (
     <Layout page={PageEnum.Input}>
       <FormBox
-        initialValues={{ name: '', disabled: 'disabled' }}
+        initialValues={{ name: '', text: '', disabled: 'disabled' }}
         style={{
           width: '20rem',
           border: '2px solid #f2f2f2',
@@ -17,6 +17,7 @@ const InputPage = () => {
         }}
         validationSchema={yup.object().shape({
           name: yup.string().required('필수 입력란입니다.'),
+          text: yup.string().required('필수 입력란입니다.'),
           disabled: yup.string().notRequired(),
         })}
         onSubmit={(values) => console.log('submit', values)}
@@ -25,6 +26,11 @@ const InputPage = () => {
           <Title>FORM</Title>
           <InputName>Name</InputName>
           <Input name="name" placeholder="이름을 입력해 주세요." />
+          <Input
+            name="text"
+            placeholder="텍스트를 입력해 주세요."
+            style={{ height: '3rem' }}
+          />
           <InputName>Disabled</InputName>
           <Input name="disabled" disabled />
           <Button style={{ width: '100%' }}>Submit</Button>
