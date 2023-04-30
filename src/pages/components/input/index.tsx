@@ -24,8 +24,13 @@ const InputPage = () => {
       >
         <VStack gap="0.5rem">
           <Title>FORM</Title>
-          <InputName>Name</InputName>
+          <InputName>
+            <Highlight>*</Highlight>Name
+          </InputName>
           <Input name="name" placeholder="이름을 입력해 주세요." />
+          <InputName>
+            <Highlight>*</Highlight>Text
+          </InputName>
           <Input
             name="text"
             placeholder="텍스트를 입력해 주세요."
@@ -42,6 +47,10 @@ const InputPage = () => {
 
 const InputName = styled.p`
   font-size: 10px;
+`
+const Highlight = styled.span`
+  color: red;
+  font-weight: bold;
 `
 
 export default InputPage
