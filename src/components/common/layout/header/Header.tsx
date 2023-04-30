@@ -1,6 +1,6 @@
 import Logo from '@components/common/logo'
-import { HStack } from '@components/common/stack'
 import * as S from './Header.style'
+import { HStack } from 's-form-ui'
 
 const Header = () => {
   return (
