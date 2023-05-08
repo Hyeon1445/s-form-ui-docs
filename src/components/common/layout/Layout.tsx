@@ -1,12 +1,12 @@
-import { ReactElement } from 'react'
+import { ReactNode } from 'react'
 import Header from './header'
 import Sidebar from './sidebar'
 import { PageEnum } from './sidebar/Sidebar'
 import * as S from './Layout.style'
-import { Button, HStack, VStack } from 's-form-ui'
+import { HStack, VStack } from 's-form-ui'
 
 interface LayoutProps {
-  children: ReactElement
+  children: ReactNode
   page: PageEnum
 }
 

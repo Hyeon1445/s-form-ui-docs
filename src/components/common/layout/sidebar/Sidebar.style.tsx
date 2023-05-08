@@ -37,7 +37,8 @@ export const ComponentDetailTab = styled.button<TabProps>`
   border-radius: 3rem;
   font-size: ${theme.fontSize.sm};
   &:hover {
-    background-color: ${theme.background.white}50;
+    background-color: ${({ isSelected }) =>
+      !isSelected && `${theme.background.white}50`};
   }
 `
 
