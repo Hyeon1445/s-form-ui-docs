@@ -13,7 +13,7 @@ const Header = () => {
       >
         <HStack gap="0.5rem">
           <Logo />
-          <S.Title>Form UI</S.Title>
+          <S.Title>S.Form UI</S.Title>
         </HStack>
         <HStack gap="0.5rem">
           <S.MoreIcon className="material-icons">more_vert</S.MoreIcon>
