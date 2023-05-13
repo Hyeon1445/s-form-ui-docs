@@ -23,10 +23,8 @@ const SelectPage = () => {
       >
         <VStack gap="0.5rem">
           <Title>FORM</Title>
-          <InputName>
-            <Highlight>*</Highlight>Select
-          </InputName>
           <Select name="name">
+            <Select.Label>Name</Select.Label>
             <Select.Button />
             <Select.Options>
               <Select.Option value="name1">name1</Select.Option>
@@ -37,9 +35,7 @@ const SelectPage = () => {
             </Select.Options>
           </Select>
           <ScrollArea>
-            <InputName>
-              <Highlight>*</Highlight>scroll area
-            </InputName>
+            <Select.Label>Favorite Movie</Select.Label>
             <Select name="movie">
               <Select.Button />
               <Select.Options>
@@ -61,7 +57,7 @@ const SelectPage = () => {
 const InputName = styled.p`
   font-size: 10px;
 `
-const Highlight = styled.span`
+const Required = styled.span`
   color: red;
   font-weight: bold;
 `
