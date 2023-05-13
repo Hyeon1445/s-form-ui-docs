@@ -9,7 +9,7 @@ const SelectPage = () => {
   return (
     <Layout page={PageEnum.Select}>
       <FormBox
-        initialValues={{ name: '' }}
+        initialValues={{ name: '', movie: '' }}
         style={{
           width: '20rem',
           border: '2px solid #f2f2f2',
@@ -17,6 +17,7 @@ const SelectPage = () => {
         }}
         validationSchema={yup.object().shape({
           name: yup.string().required('필수 입력란입니다.'),
+          movie: yup.string().required('필수 입력란입니다.'),
         })}
         onSubmit={(values) => console.log('submit', values)}
       >
@@ -35,6 +36,21 @@ const SelectPage = () => {
               <Select.Option value="name5">name5</Select.Option>
             </Select.Options>
           </Select>
+          <ScrollArea>
+            <InputName>
+              <Highlight>*</Highlight>scroll area
+            </InputName>
+            <Select name="movie">
+              <Select.Button />
+              <Select.Options>
+                <Select.Option value="movie1">movie1</Select.Option>
+                <Select.Option value="movie2">movie2</Select.Option>
+                <Select.Option value="movie3">movie3</Select.Option>
+                <Select.Option value="movie4">movie4</Select.Option>
+                <Select.Option value="moive5">moive5</Select.Option>
+              </Select.Options>
+            </Select>
+          </ScrollArea>
           <Button style={{ width: '100%' }}>Submit</Button>
         </VStack>
       </FormBox>
@@ -48,6 +64,23 @@ const InputName = styled.p`
 const Highlight = styled.span`
   color: red;
   font-weight: bold;
+`
+const ScrollArea = styled.div`
+  padding: 10rem 1rem;
+  background-color: #f2f2f2;
+  max-height: 10rem;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+    background: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb;
+    opacity: 0.4;
+  }
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
 `
 
 export default SelectPage
