@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import * as S from './Sidebar.style'
 
 export enum PageEnum {
+  Stack = 'Stack',
   FormBox = 'FormBox',
   Input = 'Input',
   Select = 'Select',
@@ -17,6 +18,7 @@ interface SidebarProps {
 }
 
 const components = [
+  PageEnum.Stack,
   PageEnum.FormBox,
   PageEnum.Input,
   PageEnum.Select,
