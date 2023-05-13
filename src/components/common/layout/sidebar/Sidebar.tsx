@@ -5,11 +5,11 @@ import * as S from './Sidebar.style'
 export enum PageEnum {
   Stack = 'Stack',
   FormBox = 'FormBox',
+  Button = 'Button',
   Input = 'Input',
   Select = 'Select',
   Radio = 'Radio',
   Checkbox = 'Checkbox',
-  Button = 'Button',
   Playground = 'Playground',
 }
 
@@ -20,11 +20,11 @@ interface SidebarProps {
 const components = [
   PageEnum.Stack,
   PageEnum.FormBox,
+  PageEnum.Button,
   PageEnum.Input,
   PageEnum.Select,
   PageEnum.Radio,
   PageEnum.Checkbox,
-  PageEnum.Button,
 ]
 
 const Sidebar = ({ selectedTab }: SidebarProps) => {
