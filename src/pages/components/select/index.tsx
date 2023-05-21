@@ -9,7 +9,7 @@ const SelectPage = () => {
   return (
     <Layout page={PageEnum.Select}>
       <FormBox
-        initialValues={{ name: '', movie: '' }}
+        initialValues={{ name: '', movie: '', disabled: 'disabled' }}
         style={{
           width: '20rem',
           border: '2px solid #f2f2f2',
@@ -18,6 +18,7 @@ const SelectPage = () => {
         validationSchema={yup.object().shape({
           name: yup.string().required('필수 입력란입니다.'),
           movie: yup.string().required('필수 입력란입니다.'),
+          disabled: yup.string(),
         })}
         onSubmit={(values) => console.log('submit', values)}
       >
@@ -26,6 +27,7 @@ const SelectPage = () => {
           <Select name="name">
             <Select.Label>Name</Select.Label>
             <Select.Button />
+            <Select.ErrorMessage />
             <Select.Options>
               <Select.Option value="name1">name1</Select.Option>
               <Select.Option value="name2">name2</Select.Option>
@@ -34,10 +36,21 @@ const SelectPage = () => {
               <Select.Option value="name5">name5</Select.Option>
             </Select.Options>
           </Select>
+
+          <Select name="disabled" disabled>
+            <Select.Label>Disabled</Select.Label>
+            <Select.Button />
+            <Select.ErrorMessage />
+            <Select.Options>
+              <Select.Option value="disabled">disabled</Select.Option>
+            </Select.Options>
+          </Select>
+
           <ScrollArea>
             <Select.Label>Favorite Movie</Select.Label>
             <Select name="movie">
               <Select.Button />
+              <Select.ErrorMessage />
               <Select.Options>
                 <Select.Option value="movie1">movie1</Select.Option>
                 <Select.Option value="movie2">movie2</Select.Option>
@@ -47,6 +60,7 @@ const SelectPage = () => {
               </Select.Options>
             </Select>
           </ScrollArea>
+
           <Button style={{ width: '100%' }}>Submit</Button>
         </VStack>
       </FormBox>
