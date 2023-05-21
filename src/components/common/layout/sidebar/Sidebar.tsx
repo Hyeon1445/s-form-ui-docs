@@ -12,8 +12,6 @@ export enum PageEnum {
   Switch = 'Switch',
   Color = 'Color',
   DatePicker = 'DatePicker',
-  MonthPicker = 'MonthPicker',
-  TimePicker = 'TimePicker',
   Stack = 'Stack',
   Playground = 'Playground',
 }
@@ -32,8 +30,6 @@ const components = [
   PageEnum.Switch,
   PageEnum.Color,
   PageEnum.DatePicker,
-  PageEnum.MonthPicker,
-  PageEnum.TimePicker,
   PageEnum.Stack,
 ]
 
