@@ -3,13 +3,17 @@ import { useRouter } from 'next/router'
 import * as S from './Sidebar.style'
 
 export enum PageEnum {
-  Stack = 'Stack',
   FormBox = 'FormBox',
   Button = 'Button',
   Input = 'Input',
   Select = 'Select',
   Radio = 'Radio',
   Checkbox = 'Checkbox',
+  Color = 'Color',
+  DatePicker = 'DatePicker',
+  MonthPicker = 'MonthPicker',
+  TimePicker = 'TimePicker',
+  Stack = 'Stack',
   Playground = 'Playground',
 }
 
@@ -18,13 +22,17 @@ interface SidebarProps {
 }
 
 const components = [
-  PageEnum.Stack,
   PageEnum.FormBox,
   PageEnum.Button,
   PageEnum.Input,
   PageEnum.Select,
   PageEnum.Radio,
   PageEnum.Checkbox,
+  PageEnum.Color,
+  PageEnum.DatePicker,
+  PageEnum.MonthPicker,
+  PageEnum.TimePicker,
+  PageEnum.Stack,
 ]
 
 const Sidebar = ({ selectedTab }: SidebarProps) => {
