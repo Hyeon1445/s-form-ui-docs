@@ -16,6 +16,7 @@ const InputPage = () => {
           custom: '',
           tooltip: '',
           counter: '',
+          color: '#ff0000',
         }}
         style={{
           width: '20rem',
@@ -33,6 +34,7 @@ const InputPage = () => {
             .required('최소 3글자 이상 입력해주세요.')
             .min(3, '최소 3글자 이상 입력해주세요.')
             .max(10, '최대 10글자까지 입력 가능합니다.'),
+          color: yup.string().required('필수 입력란입니다.'),
         })}
         onSubmit={(values) => console.log('submit', values)}
       >
@@ -77,6 +79,7 @@ const InputPage = () => {
                 <Input.Counter max={10} />
               </Stack>
             </Input>
+            <Input name="color" type="color" />
           </Container>
           <Button style={{ width: '100%' }}>Submit</Button>
         </Stack>
