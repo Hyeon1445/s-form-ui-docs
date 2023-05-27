@@ -10,7 +10,6 @@ export enum PageEnum {
   Radio = 'Radio',
   Checkbox = 'Checkbox',
   Switch = 'Switch',
-  Color = 'Color',
   DatePicker = 'DatePicker',
   Stack = 'Stack',
   Playground = 'Playground',
@@ -28,7 +27,6 @@ const components = [
   PageEnum.Radio,
   PageEnum.Checkbox,
   PageEnum.Switch,
-  PageEnum.Color,
   PageEnum.DatePicker,
   PageEnum.Stack,
 ]
