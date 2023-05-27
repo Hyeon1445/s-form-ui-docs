@@ -15,8 +15,12 @@ const MonthPickerPage = () => {
         }}
         onSubmit={(values) => console.log('submit', values)}
       >
-        <Title>FORM</Title>
-        <Button style={{ width: '100%' }}>Submit</Button>
+        {({ values, errors }) => (
+          <>
+            <Title>FORM</Title>
+            <Button style={{ width: '100%' }}>Submit</Button>
+          </>
+        )}
       </FormBox>
     </Layout>
   )
