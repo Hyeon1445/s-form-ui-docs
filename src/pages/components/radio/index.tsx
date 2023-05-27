@@ -3,6 +3,7 @@ import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { Button, FormBox, Radio, Stack } from 's-form-ui'
 import { Title } from '../formbox'
 import { CSSProperties } from 'react'
+import * as yup from 'yup'
 
 const RadioPage = () => {
   const checkedTabStyle: CSSProperties = {
@@ -22,6 +23,15 @@ const RadioPage = () => {
           border: '2px solid #f2f2f2',
           padding: '1rem',
         }}
+        validationSchema={yup.object().shape({
+          radio: yup.string(),
+          radio2: yup.string(),
+          radio3: yup.string(),
+          radio4: yup.string().test({
+            message: 'option2 is not allowed',
+            test: (value) => value !== 'option2',
+          }),
+        })}
         onSubmit={(values) => console.log('submit', values)}
       >
         <Title>FORM</Title>
@@ -64,7 +74,7 @@ const RadioPage = () => {
             </Stack>
           </Radio>
           <Radio name="radio4">
-            <Radio.Label>radio3</Radio.Label>
+            <Radio.Label>radio3 (option2 - not allowed)</Radio.Label>
             <Stack direction="col" gap="0.5rem" padding="0.5rem0">
               <Radio.Option value="option1" checkedStyle={checkedTabStyle}>
                 option1
@@ -87,6 +97,7 @@ const RadioPage = () => {
                 option4
               </Radio.Option>
             </Stack>
+            <Radio.ErrorMessage />
           </Radio>
           <Button style={{ width: '100%' }}>Submit</Button>
         </Stack>
