@@ -2,7 +2,7 @@ import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { Title } from '../formbox'
 import * as yup from 'yup'
-import { Button, FormBox, HStack, Input, VStack } from 's-form-ui'
+import { Button, FormBox, Stack, Input } from 's-form-ui'
 import styled from '@emotion/styled'
 
 const InputPage = () => {
@@ -36,21 +36,21 @@ const InputPage = () => {
         })}
         onSubmit={(values) => console.log('submit', values)}
       >
-        <VStack gap="0.5rem">
+        <Stack direction="col" gap="0.5rem">
           <Title>FORM</Title>
           <Container>
-            <VStack>
+            <Stack direction="col">
               <Input.Label>Name</Input.Label>
               <Input name="name" placeholder="이름을 입력해 주세요." />
-            </VStack>
-            <VStack>
+            </Stack>
+            <Stack direction="col">
               <Input.Label>Text</Input.Label>
               <Input name="text" placeholder="텍스트를 입력해 주세요." />
-            </VStack>
-            <VStack>
+            </Stack>
+            <Stack direction="col">
               <Input.Label>Disabled</Input.Label>
               <Input name="disabled" disabled />
-            </VStack>
+            </Stack>
             <Input name="tooltip" style={{ margin: '3rem 0' }}>
               <Input.Label>tooltip</Input.Label>
               <Input.Field />
@@ -61,25 +61,25 @@ const InputPage = () => {
               />
             </Input>
             <Input name="custom">
-              <HStack justifyContent="space-between">
+              <Stack justifyContent="space-between">
                 <Input.Label>custom</Input.Label>
                 <Input.ErrorMessage />
-              </HStack>
+              </Stack>
               <Input.Field />
             </Input>
             <Input name="counter">
               <Input.Label>counter</Input.Label>
               <Input.Field />
-              <HStack justifyContent="space-between">
+              <Stack justifyContent="space-between">
                 <div>
                   <Input.ErrorMessage />
                 </div>
                 <Input.Counter max={10} />
-              </HStack>
+              </Stack>
             </Input>
           </Container>
           <Button style={{ width: '100%' }}>Submit</Button>
-        </VStack>
+        </Stack>
       </FormBox>
     </Layout>
   )

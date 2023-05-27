@@ -3,7 +3,7 @@ import Header from './header'
 import Sidebar from './sidebar'
 import { PageEnum } from './sidebar/Sidebar'
 import * as S from './Layout.style'
-import { HStack, VStack } from 's-form-ui'
+import { Stack } from 's-form-ui'
 
 interface LayoutProps {
   children: ReactNode
@@ -12,13 +12,13 @@ interface LayoutProps {
 
 const Layout = ({ children, page }: LayoutProps) => {
   return (
-    <VStack>
+    <Stack direction="col">
       <Header />
-      <HStack>
+      <Stack>
         <Sidebar selectedTab={page} />
         <S.ChildrenWrapper>{children}</S.ChildrenWrapper>
-      </HStack>
-    </VStack>
+      </Stack>
+    </Stack>
   )
 }
 

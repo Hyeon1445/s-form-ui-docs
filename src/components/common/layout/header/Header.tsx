@@ -1,24 +1,24 @@
 import Logo from '@components/common/logo'
 import * as S from './Header.style'
-import { HStack } from 's-form-ui'
+import { Stack } from 's-form-ui'
 
 const Header = () => {
   return (
     <S.HeaderWrapper>
-      <HStack
+      <Stack
         height="3rem"
         justifyContent="space-between"
         alignItems="center"
         padding="0 1rem"
       >
-        <HStack gap="0.5rem">
+        <Stack gap="0.5rem">
           <Logo />
           <S.Title>S.Form UI</S.Title>
-        </HStack>
-        <HStack gap="0.5rem">
+        </Stack>
+        <Stack gap="0.5rem">
           <S.MoreIcon className="material-icons">more_vert</S.MoreIcon>
-        </HStack>
-      </HStack>
+        </Stack>
+      </Stack>
     </S.HeaderWrapper>
   )
 }
