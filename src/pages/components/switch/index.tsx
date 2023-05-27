@@ -5,7 +5,7 @@ import { Button, FormBox } from 's-form-ui'
 
 const SwitchPage = () => {
   return (
-    <Layout page={PageEnum.Button}>
+    <Layout page={PageEnum.Switch}>
       <FormBox
         initialValues={{ value: 'value' }}
         style={{
