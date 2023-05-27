@@ -11,6 +11,8 @@ export enum PageEnum {
   Checkbox = 'Checkbox',
   Switch = 'Switch',
   DatePicker = 'DatePicker',
+  MonthPicker = 'MonthPicker',
+  TimePicker = 'TimePicker',
   Stack = 'Stack',
   Playground = 'Playground',
 }
@@ -28,6 +30,8 @@ const components = [
   PageEnum.Checkbox,
   PageEnum.Switch,
   PageEnum.DatePicker,
+  PageEnum.MonthPicker,
+  PageEnum.TimePicker,
   PageEnum.Stack,
 ]
 
