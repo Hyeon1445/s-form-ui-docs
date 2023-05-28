@@ -1,6 +1,6 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-import { Title } from '../formbox'
+import { Title } from '../form'
 import { Button, Form } from 's-form-ui'
 
 const TimePickerPage = () => {
