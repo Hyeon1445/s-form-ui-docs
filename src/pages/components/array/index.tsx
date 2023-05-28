@@ -3,7 +3,7 @@ import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import styled from '@emotion/styled'
 import { Button, FormBox } from 's-form-ui'
 
-const FormBoxPage = () => {
+const ArrayPage = () => {
   return (
     <Layout page={PageEnum.Array}>
       <FormBox
@@ -29,4 +29,4 @@ export const Title = styled.p`
   margin-bottom: 1rem;
 `
 
-export default FormBoxPage
+export default ArrayPage
