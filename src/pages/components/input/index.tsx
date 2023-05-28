@@ -2,7 +2,8 @@ import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { Title } from '../formbox'
 import * as yup from 'yup'
-import { Button, FormBox, Stack, Input } from 's-form-ui'
+//import { Button, FormBox, Stack, Input } from 's-form-ui'
+import { Button, FormBox, Input } from 's-form-ui'
 import styled from '@emotion/styled'
 
 const InputPage = () => {
@@ -38,7 +39,7 @@ const InputPage = () => {
         })}
         onSubmit={(values) => console.log('submit', values)}
       >
-        <Stack direction="col" gap="0.5rem">
+        {/*<Stack direction="col" gap="0.5rem">
           <Title>FORM</Title>
           <Container>
             <Stack direction="col">
@@ -82,7 +83,7 @@ const InputPage = () => {
             <Input name="color" type="color" />
           </Container>
           <Button style={{ width: '100%' }}>Submit</Button>
-        </Stack>
+        </Stack>*/}
       </FormBox>
     </Layout>
   )

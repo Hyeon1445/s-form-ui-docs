@@ -3,7 +3,8 @@ import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { Title } from '../formbox'
 import * as yup from 'yup'
 import styled from '@emotion/styled'
-import { Button, FormBox, Stack, Select } from 's-form-ui'
+//import { Button, FormBox, Stack, Select } from 's-form-ui'
+import { Button, FormBox, Select } from 's-form-ui'
 
 const SelectPage = () => {
   return (
@@ -22,7 +23,7 @@ const SelectPage = () => {
         })}
         onSubmit={(values) => console.log('submit', values)}
       >
-        <Stack direction="col" gap="0.5rem">
+        {/*<Stack direction="col" gap="0.5rem">
           <Title>FORM</Title>
           <Select name="name">
             <Select.Label>Name</Select.Label>
@@ -62,7 +63,7 @@ const SelectPage = () => {
           </ScrollArea>
 
           <Button style={{ width: '100%' }}>Submit</Button>
-        </Stack>
+        </Stack>*/}
       </FormBox>
     </Layout>
   )

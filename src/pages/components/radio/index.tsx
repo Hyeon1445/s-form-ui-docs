@@ -1,6 +1,7 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-import { Button, FormBox, Radio, Stack } from 's-form-ui'
+//import { Button, FormBox, Radio, Stack } from 's-form-ui'
+import { Button, FormBox } from 's-form-ui'
 import { Title } from '../formbox'
 import { CSSProperties } from 'react'
 import * as yup from 'yup'
@@ -35,7 +36,7 @@ const RadioPage = () => {
         onSubmit={(values) => console.log('submit', values)}
       >
         <Title>FORM</Title>
-        <Stack direction="col" gap="1rem">
+        {/*<Stack direction="col" gap="1rem">
           <Radio name="radio">
             <Radio.Label>radio</Radio.Label>
             <Stack gap="0.5rem">
@@ -100,7 +101,7 @@ const RadioPage = () => {
             <Radio.ErrorMessage />
           </Radio>
           <Button style={{ width: '100%' }}>Submit</Button>
-        </Stack>
+        </Stack>*/}
       </FormBox>
     </Layout>
   )
