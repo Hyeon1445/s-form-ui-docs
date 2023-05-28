@@ -13,7 +13,7 @@ const FormBoxPage = () => {
           border: '2px solid #f2f2f2',
           padding: '1rem',
         }}
-        onSubmit={(values) => console.log('submit', values)}
+        onSubmit={() => {}}
       >
         <Title>FORM</Title>
         <Button style={{ width: '100%' }}>Submit</Button>
