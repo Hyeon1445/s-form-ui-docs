@@ -10,16 +10,14 @@ const CheckboxPage = () => {
       <FormBox
         initialValues={{ checkbox: [false, true, false, true, true] }}
         validationSchema={yup.object().shape({
-          checkbox: yup.array().of(yup.mixed().required('required!!')),
+          checkbox: yup.array().of(yup.boolean().required('required!!')),
         })}
         style={{
           width: '20rem',
           border: '2px solid #f2f2f2',
           padding: '1rem',
         }}
-        onSubmit={(values) => {
-          console.log({ values })
-        }}
+        onSubmit={(values) => console.log({ values })}
       >
         {({}) => (
           <>
