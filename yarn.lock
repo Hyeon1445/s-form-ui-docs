@@ -2538,10 +2538,10 @@ rxjs@^7.8.0:
   dependencies:
     tslib "^2.1.0"
 
-s-form-ui@0.1.19:
-  version "0.1.19"
-  resolved "https://registry.yarnpkg.com/s-form-ui/-/s-form-ui-0.1.19.tgz#5a4e38cce8fc761e2f4255b6f45a96863b9c7882"
-  integrity sha512-jGUbrf+fU1VNYlg5aCGLAmylbh9NFjijIELidzmmUO6Ba7fTSmkLY0/jz0qVOLxx6Ur8XAzfs94IuuHI1d0wiQ==
+s-form-ui@0.1.20:
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/s-form-ui/-/s-form-ui-0.1.20.tgz#55bd3e4e550a594f1e97beff33a5b7b66b2eeff4"
+  integrity sha512-+bcunOEfy9QlHdbZA91YktQk3SI9JEBl6kAGEeX2uYlV2RZNbVI+ap5tlslZ1gx/phXpg0SZkKuE3JJRDKbDnw==
   dependencies:
     "@emotion/react" "^11.10.8"
     "@emotion/styled" "^11.10.8"

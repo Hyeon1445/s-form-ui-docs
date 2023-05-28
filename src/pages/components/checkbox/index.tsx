@@ -19,23 +19,19 @@ const CheckboxPage = () => {
         }}
         onSubmit={(values) => console.log({ values })}
       >
-        {({}) => (
-          <>
-            <Stack direction="col" width="5rem" gap="0.5rem" margin="0 0 1rem">
-              <Checkbox name="checkbox[0]" />
-              <Checkbox name="checkbox[1]" />
-              <Checkbox name="checkbox[2]" disabled />
-              <Checkbox name="checkbox[3]" disabled label="disabled" />
-              <Checkbox
-                name="checkbox[4]"
-                label="label"
-                onChange={(value) => console.log({ value })}
-              />
-            </Stack>
-            <Button>submit</Button>
-            <Button type="reset">Reset</Button>
-          </>
-        )}
+        <Stack direction="col" width="5rem" gap="0.5rem" margin="0 0 1rem">
+          <Checkbox name="checkbox[0]" />
+          <Checkbox name="checkbox[1]" />
+          <Checkbox name="checkbox[2]" disabled />
+          <Checkbox name="checkbox[3]" disabled label="disabled" />
+          <Checkbox
+            name="checkbox[4]"
+            label="label"
+            onChange={(value) => console.log({ value })}
+          />
+        </Stack>
+        <Button>submit</Button>
+        <Button type="reset">Reset</Button>
       </FormBox>
     </Layout>
   )
