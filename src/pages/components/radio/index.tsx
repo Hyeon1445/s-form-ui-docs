@@ -1,7 +1,7 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-//import { Button, FormBox, Radio, Stack } from 's-form-ui'
-import { Button, FormBox } from 's-form-ui'
+//import { Button, Form, Radio, Stack } from 's-form-ui'
+import { Button, Form } from 's-form-ui'
 import { Title } from '../formbox'
 import { CSSProperties } from 'react'
 import * as yup from 'yup'
@@ -12,7 +12,7 @@ const RadioPage = () => {
   }
   return (
     <Layout page={PageEnum.Radio}>
-      <FormBox
+      <Form
         initialValues={{
           radio: 'option1',
           radio2: 'option2',
@@ -102,7 +102,7 @@ const RadioPage = () => {
           </Radio>
           <Button style={{ width: '100%' }}>Submit</Button>
         </Stack>*/}
-      </FormBox>
+      </Form>
     </Layout>
   )
 }

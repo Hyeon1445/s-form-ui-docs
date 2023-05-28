@@ -2,14 +2,14 @@ import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { Title } from '../formbox'
 import * as yup from 'yup'
-//import { Button, FormBox, Stack, Input } from 's-form-ui'
-import { Button, FormBox, Input } from 's-form-ui'
+//import { Button, Form, Stack, Input } from 's-form-ui'
+import { Button, Form, Input } from 's-form-ui'
 import styled from '@emotion/styled'
 
 const InputPage = () => {
   return (
     <Layout page={PageEnum.Input}>
-      <FormBox
+      <Form
         initialValues={{
           name: '',
           text: '',
@@ -84,7 +84,7 @@ const InputPage = () => {
           </Container>
           <Button style={{ width: '100%' }}>Submit</Button>
         </Stack>*/}
-      </FormBox>
+      </Form>
     </Layout>
   )
 }

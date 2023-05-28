@@ -3,13 +3,13 @@ import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { Title } from '../formbox'
 import * as yup from 'yup'
 import styled from '@emotion/styled'
-//import { Button, FormBox, Stack, Select } from 's-form-ui'
-import { Button, FormBox, Select } from 's-form-ui'
+//import { Button, Form, Stack, Select } from 's-form-ui'
+import { Button, Form, Select } from 's-form-ui'
 
 const SelectPage = () => {
   return (
     <Layout page={PageEnum.Select}>
-      <FormBox
+      <Form
         initialValues={{ name: '', movie: '', disabled: 'disabled' }}
         style={{
           width: '20rem',
@@ -64,7 +64,7 @@ const SelectPage = () => {
 
           <Button style={{ width: '100%' }}>Submit</Button>
         </Stack>*/}
-      </FormBox>
+      </Form>
     </Layout>
   )
 }

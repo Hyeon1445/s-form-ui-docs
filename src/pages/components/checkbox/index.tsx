@@ -1,14 +1,14 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { FieldArray } from 'formik'
-//import { Button, Checkbox, FormBox, Stack } from 's-form-ui'
-import { Button, FormBox } from 's-form-ui'
+//import { Button, Checkbox, Form, Stack } from 's-form-ui'
+import { Button, Form } from 's-form-ui'
 import * as yup from 'yup'
 
 const CheckboxPage = () => {
   return (
     <Layout page={PageEnum.Checkbox}>
-      <FormBox
+      <Form
         initialValues={{ checkbox: [false, true, false, true, true] }}
         validationSchema={yup.object().shape({
           checkbox: yup.array().of(yup.boolean().required('required!!')),
@@ -33,7 +33,7 @@ const CheckboxPage = () => {
         {/*</Stack>*/}
         <Button>submit</Button>
         <Button type="reset">Reset</Button>
-      </FormBox>
+      </Form>
     </Layout>
   )
 }

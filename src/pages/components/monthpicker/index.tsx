@@ -1,12 +1,12 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { Title } from '../formbox'
-import { Button, FormBox } from 's-form-ui'
+import { Button, Form } from 's-form-ui'
 
 const MonthPickerPage = () => {
   return (
     <Layout page={PageEnum.MonthPicker}>
-      <FormBox
+      <Form
         initialValues={{ value: 'value' }}
         style={{
           width: '20rem',
@@ -19,7 +19,7 @@ const MonthPickerPage = () => {
           <Title>FORM</Title>
           <Button style={{ width: '100%' }}>Submit</Button>
         </>
-      </FormBox>
+      </Form>
     </Layout>
   )
 }
