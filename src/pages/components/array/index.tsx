@@ -23,7 +23,7 @@ const ArrayPage = () => {
           <>
             <Title>FORM</Title>
             <FieldArray name="inputs">
-              {values.inputs?.map((input, index) => (
+              {values.inputs?.map((input: string, index: number) => (
                 <Input name={`inputs.${index}`} key={index} />
               ))}
               <FieldArray.PushButton value={'push'} />
