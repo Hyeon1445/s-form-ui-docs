@@ -1,5 +1,5 @@
 {
-  "name": "form-ui",
+  "name": "s-form-ui-docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,7 +21,7 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "s-form-ui": "^1.0.0",
+    "s-form-ui": "^1.0.1",
     "sass": "^1.59.3",
     "typescript": "5.0.2",
     "yup": "^1.1.1"
