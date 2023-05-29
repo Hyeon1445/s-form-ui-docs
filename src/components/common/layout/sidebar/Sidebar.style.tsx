@@ -15,7 +15,7 @@ export const Container = styled.div`
   }
 `
 
-export const ComponentTab = styled.div<TabProps>`
+export const InstallationTab = styled.div<TabProps>`
   height: 3rem;
   font-weight: 800;
   width: 100%;
@@ -26,6 +26,11 @@ export const ComponentTab = styled.div<TabProps>`
   align-items: center;
   font-size: ${theme.fontSize.sm};
   background-color: ${({ isSelected }) => isSelected && theme.background.white};
+  cursor: pointer;
+  &:hover {
+    background-color: ${({ isSelected }) =>
+      !isSelected && `${theme.background.white}50`};
+  }
 `
 
 export const ComponentDetailTab = styled.button<TabProps>`

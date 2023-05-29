@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import * as S from './Sidebar.style'
 
 export enum PageEnum {
+  Installation = 'Installation',
   Form = 'Form',
   Button = 'Button',
   Input = 'Input',
@@ -40,9 +41,12 @@ const Sidebar = ({ selectedTab }: SidebarProps) => {
 
   return (
     <S.Container>
-      <S.ComponentTab isSelected={selectedTab !== PageEnum.Playground}>
-        Components
-      </S.ComponentTab>
+      <S.InstallationTab
+        isSelected={selectedTab === PageEnum.Installation}
+        onClick={() => router.push(route.main)}
+      >
+        Installation
+      </S.InstallationTab>
       {components.map((component) => (
         <S.ComponentDetailTab
           key={component}
