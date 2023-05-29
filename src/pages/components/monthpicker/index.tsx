@@ -1,6 +1,6 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-import { Title } from '../form'
+import { FormTitle } from '../form'
 import { Button, Form } from 's-form-ui'
 
 const MonthPickerPage = () => {
@@ -16,7 +16,7 @@ const MonthPickerPage = () => {
         onSubmit={(values) => console.log('submit', values)}
       >
         <>
-          <Title>FORM</Title>
+          <FormTitle>FORM</FormTitle>
           <Button style={{ width: '100%' }}>Submit</Button>
         </>
       </Form>

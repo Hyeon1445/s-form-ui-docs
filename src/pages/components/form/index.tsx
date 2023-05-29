@@ -1,28 +1,35 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
+import { Description, Title } from '@components/common/title'
 import styled from '@emotion/styled'
-import { Button, Form } from 's-form-ui'
+import { Button, Form, Stack } from 's-form-ui'
 
 const FormBoxPage = () => {
   return (
     <Layout page={PageEnum.Form}>
-      <Form
-        initialValues={{ value: 'value' }}
-        style={{
-          width: '20rem',
-          border: '2px solid #f2f2f2',
-          padding: '1rem',
-        }}
-        onSubmit={(values) => console.log('submit', values)}
-      >
-        <Title>FORM</Title>
-        <Button style={{ width: '100%' }}>Submit</Button>
-      </Form>
+      <Stack direction="col" gap="1rem">
+        <Title>Form</Title>
+        <Description>
+          {`The <Form/> component has validation properties, and it is mandatory to wrap it around the field components (such as input, select, etc.) of s-form-ui.`}
+        </Description>
+        <Form
+          initialValues={{ value: 'value' }}
+          style={{
+            width: '20rem',
+            border: '2px solid #f2f2f2',
+            padding: '1rem',
+          }}
+          onSubmit={(values) => console.log('submit', values)}
+        >
+          <FormTitle>FORM</FormTitle>
+          <Button style={{ width: '100%' }}>Submit</Button>
+        </Form>
+      </Stack>
     </Layout>
   )
 }
 
-export const Title = styled.p`
+export const FormTitle = styled.p`
   color: teal;
   font-weight: bold;
   text-align: center;

@@ -1,29 +1,17 @@
-import route from '@constants/route'
+import Layout from '@components/common/layout'
+import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
+import { Title } from '@components/common/title'
 import styled from '@emotion/styled'
-import { useRouter } from 'next/router'
+import { Stack } from 's-form-ui'
 
 const Home = () => {
-  const router = useRouter()
   return (
-    <div>
-      <Button
-        onClick={() => {
-          router.push(route.playground)
-        }}
-      >
-        Get Started
-      </Button>
-    </div>
+    <Layout page={PageEnum.Installation}>
+      <Stack direction="col" gap="1rem">
+        <Title>Installation</Title>
+      </Stack>
+    </Layout>
   )
 }
-
-const Button = styled.button`
-  background-color: teal;
-  padding: 1rem;
-  color: white;
-  margin: 1rem;
-  border-radius: 0.5rem;
-  font-weight: bold;
-`
 
 export default Home

@@ -1,6 +1,6 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-import { Title } from '../form'
+import { FormTitle } from '../form'
 import * as yup from 'yup'
 import styled from '@emotion/styled'
 import { Button, Form, Stack, Select } from 's-form-ui'
@@ -23,7 +23,7 @@ const SelectPage = () => {
         onSubmit={(values) => console.log('submit', values)}
       >
         <Stack direction="col" gap="0.5rem">
-          <Title>FORM</Title>
+          <FormTitle>FORM</FormTitle>
           <Select name="name">
             <Select.Label>Name</Select.Label>
             <Select.Button />
