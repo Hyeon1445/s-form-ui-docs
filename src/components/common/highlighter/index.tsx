@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
-import Editor, { useMonaco } from '@monaco-editor/react'
-import { useEffect, useState, useRef } from 'react'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import { dark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
-const MonacoEditor = () => {
-  const monaco = useMonaco()
-  const example = `import Layout from '@components/common/layout'
+const Highlighter = () => {
+  const codeString = `import Layout from '@components/common/layout'
   import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
   import { Button, Form, Radio, Stack } from 's-form-ui'
   import { FormTitle } from '../form'
@@ -119,62 +119,12 @@ const MonacoEditor = () => {
   }
   
   export default RadioPage
-  
   `
-
-  useEffect(() => {
-    if (!monaco) return
-
-    monaco.languages.typescript.typescriptDefaults.setDiagnosticsOptions({
-      noSyntaxValidation: true,
-      noSemanticValidation: true,
-    })
-  }, [monaco])
-
   return (
-    <Editor
-      height="100rem"
-      theme="vs-dark"
-      language="typescript"
-      value={example}
-      options={{
-        readOnly: true,
-        fontSize: 14,
-        padding: {
-          top: 24,
-        },
-        folding: false,
-        'semanticHighlighting.enabled': false,
-        minimap: {
-          enabled: false,
-        },
-        scrollbar: {
-          vertical: 'hidden',
-          handleMouseWheel: false,
-        },
-        overviewRulerLanes: 0,
-        contextmenu: false,
-        hover: {
-          enabled: false,
-        },
-        parameterHints: {
-          enabled: false,
-        },
-        quickSuggestions: {
-          comments: false,
-          other: false,
-          strings: false,
-        },
-        autoClosingBrackets: 'always',
-        suggestOnTriggerCharacters: false,
-        wordBasedSuggestions: false,
-        cursorStyle: 'line',
-        tabSize: 4,
-        showUnused: false,
-        showDeprecated: false,
-      }}
-    />
+    <SyntaxHighlighter language="typescript" style={dark} showLineNumbers>
+      {codeString}
+    </SyntaxHighlighter>
   )
 }
 
-export default MonacoEditor
+export default Highlighter
