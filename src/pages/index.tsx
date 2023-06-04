@@ -1,7 +1,7 @@
 import CodeHighlighter from '@components/common/code-highlighter'
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-import { Title } from '@components/common/title'
+import * as S from '@components/common/title'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
 
@@ -16,13 +16,13 @@ const Home = () => {
       </Head>
       <Layout page={PageEnum.Installation}>
         <Stack direction="col" gap="1rem">
-          <Title>Installation</Title>
+          <S.Title>Installation</S.Title>
           <div>
-            <p>npm</p>
+            <S.SubTitle>npm</S.SubTitle>
             <CodeHighlighter code={npm} showLineNumbers={false} />
           </div>
           <div>
-            <p>yarn</p>
+            <S.SubTitle>yarn</S.SubTitle>
             <CodeHighlighter code={yarn} showLineNumbers={false} />
           </div>
         </Stack>
