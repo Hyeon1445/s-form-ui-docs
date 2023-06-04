@@ -2,6 +2,9 @@ import styled from '@emotion/styled'
 
 export const Container = styled.div`
   position: relative;
+  .token {
+    color: #f4d03f;
+  }
   :hover {
     > button {
       display: inline-block;
