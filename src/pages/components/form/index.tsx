@@ -6,6 +6,8 @@ import BasicFormCode from '@components/form/BasicCode'
 import PropsTable from '@components/form/PropsTable'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
+import OptionalFieldExample from '@components/form/OptionalFieldExample'
+import OptionalFieldCode from '@components/form/OptionalFieldCode'
 
 const FormPage = () => {
   return (
@@ -19,14 +21,23 @@ const FormPage = () => {
           <S.Description>
             {`The <Form/> component has validation properties, and it is mandatory to wrap it around the field components (such as input, select, etc.) of s-form-ui.`}
           </S.Description>
-          <S.ExampleWrapper>
-            <BasicForm />
-          </S.ExampleWrapper>
-          <BasicFormCode />
-          <p>second example - FormikProps</p>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>Basic Form</S.Title>
+            <S.ExampleWrapper>
+              <BasicForm />
+            </S.ExampleWrapper>
+            <BasicFormCode />
+          </Stack>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>Optional Field</S.Title>
+            <S.ExampleWrapper>
+              <OptionalFieldExample />
+            </S.ExampleWrapper>
+            <OptionalFieldCode />
+          </Stack>
         </Stack>
         <Stack direction="col" margin="4rem 0 0" gap="1rem">
-          <S.Title>Props</S.Title>
+          <S.Title>{`Props - <Form/>`}</S.Title>
           <PropsTable />
         </Stack>
       </Layout>
