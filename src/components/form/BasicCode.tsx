@@ -38,7 +38,8 @@ const BasicForm = () => {
       </Stack>
     </Form>`
 
-  const post = `   )
+  const post = `
+    )
 }
   
 export default BasicForm`

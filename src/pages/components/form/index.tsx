@@ -37,7 +37,7 @@ const FormPage = () => {
           </Stack>
         </Stack>
         <Stack direction="col" margin="4rem 0 0" gap="1rem">
-          <S.Title>{`Props - <Form/>`}</S.Title>
+          <S.Title>{`Props of <Form/>`}</S.Title>
           <PropsTable />
         </Stack>
       </Layout>
