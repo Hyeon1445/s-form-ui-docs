@@ -24,3 +24,23 @@ export const ExampleWrapper = styled.div`
   justify-content: center;
   background-color: #00808020;
 `
+
+export const Table = styled.table`
+  margin: 1rem 0;
+`
+
+export const TableHead = styled.thead`
+  font-weight: bold;
+  color: teal;
+  text-align: center;
+`
+
+export const TableRow = styled.tr`
+  border-style: solid;
+  border-width: 2px 0;
+  border-color: #00808020;
+`
+
+export const TableData = styled.td`
+  padding: 1rem 0;
+`
