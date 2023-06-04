@@ -2,6 +2,7 @@ import { Button, Form, Input, Stack } from 's-form-ui'
 import * as yup from 'yup'
 
 const BasicForm = () => {
+  const initialValues = { input: '' }
   const errorMessage = 'This field is required!'
   const validationSchema = yup.object({
     input: yup.string().required(errorMessage),
@@ -18,7 +19,7 @@ const BasicForm = () => {
 
   return (
     <Form
-      initialValues={{ input: '' }}
+      initialValues={initialValues}
       validationSchema={validationSchema}
       style={formStyle}
       onSubmit={(values) => console.log('submit', values)}
