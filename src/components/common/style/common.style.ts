@@ -25,22 +25,46 @@ export const ExampleWrapper = styled.div`
   background-color: #00808020;
 `
 
+export const TableWrapper = styled.div`
+  overflow-x: auto;
+  max-width: 100%;
+`
+
 export const Table = styled.table`
   margin: 1rem 0;
+  text-align: center;
+  min-width: 30rem;
 `
 
 export const TableHead = styled.thead`
   font-weight: bold;
   color: teal;
-  text-align: center;
+`
+
+export const TableBody = styled.tbody`
+  color: #757575;
 `
 
 export const TableRow = styled.tr`
   border-style: solid;
   border-width: 2px 0;
   border-color: #00808020;
+  .type {
+    color: #00808080;
+    font-weight: bold;
+  }
+  .object {
+    text-align: left;
+    min-width: 10rem;
+  }
 `
 
 export const TableData = styled.td`
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
+  white-space: pre-line;
+`
+
+export const Required = styled.span`
+  font-weight: bold;
+  color: red;
 `

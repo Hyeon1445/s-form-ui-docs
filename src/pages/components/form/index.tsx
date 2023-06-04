@@ -1,8 +1,9 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import * as S from '@components/common/style/common.style'
-import BasicForm from '@components/form/Basic'
-import BasicFormCode from '@components/form/Code'
+import BasicForm from '@components/form/BasicExample'
+import BasicFormCode from '@components/form/BasicCode'
+import PropsTable from '@components/form/PropsTable'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
 
@@ -22,19 +23,11 @@ const FormPage = () => {
             <BasicForm />
           </S.ExampleWrapper>
           <BasicFormCode />
+          <p>second example - FormikProps</p>
         </Stack>
         <Stack direction="col" margin="4rem 0 0" gap="1rem">
           <S.Title>Props</S.Title>
-          <S.Table>
-            <S.TableHead>
-              <S.TableRow>
-                <S.TableData>Name</S.TableData>
-                <S.TableData>Type</S.TableData>
-                <S.TableData>Default</S.TableData>
-                <S.TableData>Description</S.TableData>
-              </S.TableRow>
-            </S.TableHead>
-          </S.Table>
+          <PropsTable />
         </Stack>
       </Layout>
     </>
