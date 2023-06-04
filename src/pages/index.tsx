@@ -1,7 +1,7 @@
 import CodeHighlighter from '@components/common/code-highlighter'
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-import * as S from '@components/common/title'
+import * as S from '@components/common/style/common.style'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
 
