@@ -1,6 +1,5 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-import { FormTitle } from '../form'
 import * as yup from 'yup'
 import { Button, Form, Stack, Input } from 's-form-ui'
 import styled from '@emotion/styled'
@@ -44,7 +43,6 @@ const InputPage = () => {
           onSubmit={(values) => console.log('submit', values)}
         >
           <Stack direction="col" gap="0.5rem">
-            <FormTitle>FORM</FormTitle>
             <Container>
               <Stack direction="col">
                 <Input.Label>Name</Input.Label>

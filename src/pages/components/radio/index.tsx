@@ -1,7 +1,6 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { Button, Form, Radio, Stack } from 's-form-ui'
-import { FormTitle } from '../form'
 import { CSSProperties } from 'react'
 import * as yup from 'yup'
 import Head from 'next/head'
@@ -39,7 +38,6 @@ const RadioPage = () => {
           })}
           onSubmit={(values) => console.log('submit', values)}
         >
-          <FormTitle>FORM</FormTitle>
           <Stack direction="col" gap="1rem">
             <Radio name="radio">
               <Radio.Label>radio</Radio.Label>
