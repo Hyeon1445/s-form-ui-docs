@@ -9,7 +9,7 @@ const BasicForm = () => {
 
   const formStyle = {
     width: '100%',
-    maxWidth: '20rem',
+    maxWidth: '30rem',
     boxShadow: '0px 1px 20px rgba(0, 0, 0, 0.1)',
     backgroundColor: 'white',
     borderRadius: '0.5rem',
@@ -27,7 +27,7 @@ const BasicForm = () => {
         <Input.Label>required input</Input.Label>
         <Input name="input" />
       </Stack>
-      <Stack gap="0.5rem">
+      <Stack gap="0.5rem" justifyContent="center" flexWrap="wrap">
         <Button type="reset">Reset</Button>
         <Button>Submit</Button>
       </Stack>

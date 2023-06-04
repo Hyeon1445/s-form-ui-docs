@@ -32,7 +32,7 @@ const BasicForm = () => {
         <Input.Label>required input</Input.Label>
         <Input name="input" />
       </Stack>
-      <Stack gap="0.5rem">
+      <Stack gap="0.5rem" flexWrap="wrap">
         <Button type="reset">Reset</Button>
         <Button>Submit</Button>
       </Stack>
