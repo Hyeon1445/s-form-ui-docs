@@ -19,22 +19,14 @@ const FormPage = () => {
           <S.Description>
             {`The <Form/> component has validation properties, and it is mandatory to wrap it around the field components (such as input, select, etc.) of s-form-ui.`}
           </S.Description>
-          <ExampleWrapper>
+          <S.ExampleWrapper>
             <BasicForm />
-          </ExampleWrapper>
+          </S.ExampleWrapper>
           <BasicFormCode />
         </Stack>
       </Layout>
     </>
   )
 }
-
-const ExampleWrapper = styled.div`
-  width: 100%;
-  padding: 1.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  background-color: #00808020;
-`
 
 export default FormPage
