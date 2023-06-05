@@ -38,8 +38,8 @@ const BasicButtonExample = () => {
       <Stack direction="col" gap="0.5rem" justifyContent="center">`
 
   const code = `        <Button type="reset" style={ButtonStyle}>Reset</Button>
-        <Button style={ButtonStyle}>Submit</Button>
         <Button type="button" style={ButtonStyle}>Button</Button>
+        <Button style={ButtonStyle}>Submit</Button>
         <Button style={ButtonStyle} disabled>Disabled</Button>`
 
   const post = `      </Stack>

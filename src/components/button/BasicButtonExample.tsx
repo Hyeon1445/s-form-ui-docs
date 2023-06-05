@@ -36,10 +36,10 @@ const BasicButtonExample = () => {
         <Button type="reset" style={ButtonStyle}>
           Reset
         </Button>
-        <Button style={ButtonStyle}>Submit</Button>
         <Button type="button" style={ButtonStyle} onClick={() => {}}>
           Button
         </Button>
+        <Button style={ButtonStyle}>Submit</Button>
         <Button style={ButtonStyle} disabled>
           Disabled
         </Button>
