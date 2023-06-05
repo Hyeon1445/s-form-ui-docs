@@ -4,6 +4,7 @@ import * as S from '@components/common/style/common.style'
 import { Stack } from 's-form-ui'
 import Head from 'next/head'
 import BasicButtonExample from '@components/button/BasicButtonExample'
+import BasicButtonCode from '@components/button/BasicButtonCode'
 
 const ButtonPage = () => {
   return (
@@ -20,7 +21,7 @@ const ButtonPage = () => {
             <S.ExampleWrapper>
               <BasicButtonExample />
             </S.ExampleWrapper>
-            <div>dd</div>
+            <BasicButtonCode />
           </Stack>
         </Stack>
       </Layout>
