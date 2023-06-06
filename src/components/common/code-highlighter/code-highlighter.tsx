@@ -30,6 +30,7 @@ const CodeHighlighter = ({
       await navigator.clipboard.writeText(
         [pre, code, post].join('\n').replace('$ ', '')
       )
+      // TODO: check \`
       setIsCopied(true)
       setTimeout(() => {
         setIsCopied(false)

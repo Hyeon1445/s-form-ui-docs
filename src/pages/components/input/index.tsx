@@ -5,6 +5,7 @@ import * as S from '@components/common/style/common.style'
 import Table from '@components/common/table'
 import BasicInputCode from '@components/input/BasicInputCode'
 import BasicInputExample from '@components/input/BasicInputExample'
+import ErrorMessageCode from '@components/input/ErrorMessageCode'
 import ErrorMessageExample from '@components/input/ErrorMessageExample'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
@@ -35,6 +36,7 @@ const InputPage = () => {
             <S.ExampleWrapper>
               <ErrorMessageExample />
             </S.ExampleWrapper>
+            <ErrorMessageCode />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Counter</S.Title>
