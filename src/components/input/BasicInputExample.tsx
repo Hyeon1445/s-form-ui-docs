@@ -35,13 +35,13 @@ const BasicInputExample = () => {
       onSubmit={(values) => console.log('submit', values)}
     >
       <Stack direction="col" margin="0 0 1rem">
-        <Input.Label>text</Input.Label>
+        <Input.Label>*text</Input.Label>
         <Input name="text" placeholder="placeholder" />
-        <Input.Label>{`number (<= 100)`}</Input.Label>
+        <Input.Label>{`*number (<= 100)`}</Input.Label>
         <Input name="number" type="number" />
-        <Input.Label>password</Input.Label>
+        <Input.Label>*password</Input.Label>
         <Input name="password" type="password" />
-        <Input.Label>color</Input.Label>
+        <Input.Label>*color</Input.Label>
         <Input name="color" type="color" />
         <Input.Label>disabled</Input.Label>
         <Input name="disabled" disabled />
