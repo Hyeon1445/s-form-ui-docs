@@ -21,7 +21,7 @@ const ButtonPage = () => {
           <S.Title>Button</S.Title>
           <S.Description>{`There are three types of button types: "submit" type for form submission, "reset" type for form reset, and "button" type for performing other functions.`}</S.Description>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
-            <S.Title>Basic Buttons</S.Title>
+            <S.Title>Basic Button</S.Title>
             <S.ExampleWrapper>
               <BasicButtonExample />
             </S.ExampleWrapper>
