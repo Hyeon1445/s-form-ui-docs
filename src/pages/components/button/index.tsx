@@ -5,6 +5,8 @@ import { Stack } from 's-form-ui'
 import Head from 'next/head'
 import BasicButtonExample from '@components/button/BasicButtonExample'
 import BasicButtonCode from '@components/button/BasicButtonCode'
+import CustomStyleExample from '@components/button/CustomStyleExample'
+import CustomButtonCode from '@components/button/CustomStyleCode'
 
 const ButtonPage = () => {
   return (
@@ -26,9 +28,9 @@ const ButtonPage = () => {
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Custom Style Buttons</S.Title>
             <S.ExampleWrapper>
-              <BasicButtonExample />
+              <CustomStyleExample />
             </S.ExampleWrapper>
-            <BasicButtonCode />
+            <CustomButtonCode />
           </Stack>
         </Stack>
       </Layout>
