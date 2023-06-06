@@ -17,8 +17,8 @@ const BasicButtonExample = () => {
     padding: '1rem',
   }
 
-  const ButtonStyle = {
-    width: '100%',
+  const inputStyle = {
+    width: '10rem',
   }
 
   return (
@@ -30,19 +30,13 @@ const BasicButtonExample = () => {
     >
       <Stack direction="col" margin="0 0 1rem">
         <Input.Label>required input</Input.Label>
-        <Input name="input" />
+        <Input name="input" style={inputStyle} />
       </Stack>
       <Stack direction="col" gap="0.5rem" justifyContent="center">
-        <Button type="reset" style={ButtonStyle}>
-          Reset
-        </Button>
-        <Button type="button" style={ButtonStyle} onClick={() => {}}>
-          Button
-        </Button>
-        <Button style={ButtonStyle}>Submit</Button>
-        <Button style={ButtonStyle} disabled>
-          Disabled
-        </Button>
+        <Button type="reset">Reset</Button>
+        <Button type="button">Button</Button>
+        <Button>Submit</Button>
+        <Button disabled>Disabled</Button>
       </Stack>
     </Form>
   )

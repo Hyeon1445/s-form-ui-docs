@@ -37,10 +37,10 @@ const BasicButtonExample = () => {
       </Stack>
       <Stack direction="col" gap="0.5rem" justifyContent="center">`
 
-  const code = `        <Button type="reset" style={ButtonStyle}>Reset</Button>
-        <Button type="button" style={ButtonStyle}>Button</Button>
-        <Button style={ButtonStyle}>Submit</Button>
-        <Button style={ButtonStyle} disabled>Disabled</Button>`
+  const code = `        <Button type="reset">Reset</Button>
+        <Button type="button">Button</Button>
+        <Button>Submit</Button>
+        <Button disabled>Disabled</Button>`
 
   const post = `      </Stack>
     </Form>

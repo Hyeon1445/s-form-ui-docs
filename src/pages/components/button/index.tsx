@@ -23,6 +23,13 @@ const ButtonPage = () => {
             </S.ExampleWrapper>
             <BasicButtonCode />
           </Stack>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>Custom Style Buttons</S.Title>
+            <S.ExampleWrapper>
+              <BasicButtonExample />
+            </S.ExampleWrapper>
+            <BasicButtonCode />
+          </Stack>
         </Stack>
       </Layout>
     </>
