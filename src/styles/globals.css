@@ -3,18 +3,6 @@
 html,
 body {
   padding: 0 !important;
-  scrollbar-gutter: stable;
-  &::-webkit-scrollbar {
-    width: 0.25rem;
-    background: none;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #dbdbdb;
-    opacity: 0.4;
-  }
-  &::-webkit-scrollbar-track {
-    background: none;
-  }
 }
 
 a {
