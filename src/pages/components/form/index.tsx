@@ -3,11 +3,12 @@ import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import * as S from '@components/common/style/common.style'
 import BasicForm from '@components/form/BasicExample'
 import BasicFormCode from '@components/form/BasicCode'
-import PropsTable from '@components/form/PropsTable'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
 import OptionalFieldExample from '@components/form/OptionalFieldExample'
 import OptionalFieldCode from '@components/form/OptionalFieldCode'
+import Table from '@components/common/table'
+import { formProps } from '@components/form/PropsData'
 
 const FormPage = () => {
   return (
@@ -38,7 +39,7 @@ const FormPage = () => {
         </Stack>
         <Stack direction="col" margin="4rem 0 0" gap="1rem">
           <S.Title>{`Props of <Form/>`}</S.Title>
-          <PropsTable />
+          <Table propsItems={formProps} />
         </Stack>
       </Layout>
     </>
