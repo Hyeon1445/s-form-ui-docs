@@ -7,6 +7,8 @@ import BasicButtonExample from '@components/button/BasicButtonExample'
 import BasicButtonCode from '@components/button/BasicButtonCode'
 import CustomStyleExample from '@components/button/CustomStyleExample'
 import CustomButtonCode from '@components/button/CustomStyleCode'
+import Table from '@components/common/table'
+import { BUTTON_PROPS } from '@components/button/PropsData'
 
 const ButtonPage = () => {
   return (
@@ -31,6 +33,13 @@ const ButtonPage = () => {
               <CustomStyleExample />
             </S.ExampleWrapper>
             <CustomButtonCode />
+          </Stack>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>{`Props of <Button/>`}</S.Title>
+            <S.Description>
+              Props of the native button are also available
+            </S.Description>
+            <Table propsItems={BUTTON_PROPS} />
           </Stack>
         </Stack>
       </Layout>
