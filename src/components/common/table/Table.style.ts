@@ -10,6 +10,7 @@ export const Table = styled.table`
   text-align: center;
   min-width: 30rem;
   line-height: 1.25;
+  width: 100%;
 `
 
 export const TableHead = styled.thead`

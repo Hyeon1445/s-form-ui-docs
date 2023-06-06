@@ -7,6 +7,7 @@ import BasicInputCode from '@components/input/BasicInputCode'
 import BasicInputExample from '@components/input/BasicInputExample'
 import ErrorMessageCode from '@components/input/ErrorMessageCode'
 import ErrorMessageExample from '@components/input/ErrorMessageExample'
+import { ERROR_MESSAGE_PROPS, LABEL_PROPS } from '@components/input/PropsData'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
 
@@ -64,7 +65,7 @@ const InputPage = () => {
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Label />`}</S.Title>
             <S.Description>TODO: label description</S.Description>
-            <Table propsItems={BUTTON_PROPS} />
+            <Table propsItems={LABEL_PROPS} />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Field />`}</S.Title>
@@ -74,7 +75,7 @@ const InputPage = () => {
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.ErrorMessage />`}</S.Title>
             <S.Description>TODO: error description</S.Description>
-            <Table propsItems={BUTTON_PROPS} />
+            <Table propsItems={ERROR_MESSAGE_PROPS} />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Tooltip />`}</S.Title>
