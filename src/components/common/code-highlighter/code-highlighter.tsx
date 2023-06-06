@@ -28,7 +28,7 @@ const CodeHighlighter = ({
     event.stopPropagation()
     try {
       await navigator.clipboard.writeText(
-        [pre, code, post].join('').replace('$ ', '')
+        [pre, code, post].join('\n').replace('$ ', '')
       )
       setIsCopied(true)
       setTimeout(() => {
