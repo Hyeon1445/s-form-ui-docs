@@ -16,6 +16,7 @@ const InputPage = () => {
           initialValues={{
             name: '',
             text: '',
+            number: 10,
             disabled: 'disabled',
             custom: '',
             tooltip: '',
@@ -31,6 +32,7 @@ const InputPage = () => {
             name: yup.string().required('필수 입력란입니다.'),
             text: yup.string().required('필수 입력란입니다.'),
             disabled: yup.string().notRequired(),
+            number: yup.number().max(100),
             custom: yup.string().required('필수 입력란입니다.'),
             tooltip: yup.string().required('필수 입력란입니다.'),
             counter: yup
@@ -51,6 +53,10 @@ const InputPage = () => {
               <Stack direction="col">
                 <Input.Label>Text</Input.Label>
                 <Input name="text" placeholder="텍스트를 입력해 주세요." />
+              </Stack>
+              <Stack direction="col">
+                <Input.Label>number</Input.Label>
+                <Input name="number" type="number" />
               </Stack>
               <Stack direction="col">
                 <Input.Label>Disabled</Input.Label>
