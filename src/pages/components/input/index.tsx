@@ -18,6 +18,7 @@ const InputPage = () => {
             text: '',
             number: 10,
             disabled: 'disabled',
+            password: '',
             custom: '',
             tooltip: '',
             counter: '',
@@ -32,7 +33,11 @@ const InputPage = () => {
             name: yup.string().required('필수 입력란입니다.'),
             text: yup.string().required('필수 입력란입니다.'),
             disabled: yup.string().notRequired(),
-            number: yup.number().max(100),
+            number: yup
+              .number()
+              .required('필수 입력란입니다.')
+              .max(100, 'Number must be less than or equal to 100'),
+            password: yup.string().required('필수 입력란입니다.'),
             custom: yup.string().required('필수 입력란입니다.'),
             tooltip: yup.string().required('필수 입력란입니다.'),
             counter: yup
@@ -57,6 +62,10 @@ const InputPage = () => {
               <Stack direction="col">
                 <Input.Label>number</Input.Label>
                 <Input name="number" type="number" />
+              </Stack>
+              <Stack direction="col">
+                <Input.Label>password</Input.Label>
+                <Input name="password" type="password" />
               </Stack>
               <Stack direction="col">
                 <Input.Label>Disabled</Input.Label>
