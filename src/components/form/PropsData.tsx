@@ -60,7 +60,7 @@ export const formProps: Array<PropsItem> = [
   {
     name: 'style',
     type: 'CSSProperties',
-    default: `{ width:"100%" }`,
+    default: `{width:"100%"}`,
     description: 'Style of the form.',
   },
 ]
