@@ -5,6 +5,7 @@ import * as S from '@components/common/style/common.style'
 import Table from '@components/common/table'
 import BasicInputCode from '@components/input/BasicInputCode'
 import BasicInputExample from '@components/input/BasicInputExample'
+import ErrorMessageExample from '@components/input/ErrorMessageExample'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
 
@@ -27,8 +28,12 @@ const InputPage = () => {
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Error Message</S.Title>
+            <S.Description>
+              Check the error message position for the required input in the
+              following example.
+            </S.Description>
             <S.ExampleWrapper>
-              <BasicInputExample />
+              <ErrorMessageExample />
             </S.ExampleWrapper>
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
