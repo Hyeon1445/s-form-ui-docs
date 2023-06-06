@@ -3,6 +3,7 @@ import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import * as S from '@components/common/style/common.style'
 import Table from '@components/common/table'
+import BasicInputCode from '@components/input/BasicInputCode'
 import BasicInputExample from '@components/input/BasicInputExample'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
@@ -22,6 +23,7 @@ const InputPage = () => {
             <S.ExampleWrapper>
               <BasicInputExample />
             </S.ExampleWrapper>
+            <BasicInputCode />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Error Message</S.Title>
