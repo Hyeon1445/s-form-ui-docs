@@ -8,7 +8,7 @@ import { Stack } from 's-form-ui'
 import OptionalFieldExample from '@components/form/OptionalFieldExample'
 import OptionalFieldCode from '@components/form/OptionalFieldCode'
 import Table from '@components/common/table'
-import { formProps } from '@components/form/PropsData'
+import { FORM_PROPS } from '@components/form/PropsData'
 
 const FormPage = () => {
   return (
@@ -39,7 +39,7 @@ const FormPage = () => {
         </Stack>
         <Stack direction="col" margin="4rem 0 0" gap="1rem">
           <S.Title>{`Props of <Form/>`}</S.Title>
-          <Table propsItems={formProps} />
+          <Table propsItems={FORM_PROPS} />
         </Stack>
       </Layout>
     </>

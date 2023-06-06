@@ -1,6 +1,6 @@
 import { PropsItem } from '@components/common/table/Table'
 
-export const formProps: Array<PropsItem> = [
+export const FORM_PROPS: Array<PropsItem> = [
   {
     isRequired: true,
     name: 'children',
