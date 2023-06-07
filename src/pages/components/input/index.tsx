@@ -7,6 +7,8 @@ import BasicInputCode from '@components/input/BasicInputCode'
 import BasicInputExample from '@components/input/BasicInputExample'
 import ErrorMessageCode from '@components/input/ErrorMessageCode'
 import ErrorMessageExample from '@components/input/ErrorMessageExample'
+import InputCounterCode from '@components/input/InputCounterCode'
+import InputCounterExample from '@components/input/InputCounterExample'
 import { ERROR_MESSAGE_PROPS, LABEL_PROPS } from '@components/input/PropsData'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
@@ -42,8 +44,9 @@ const InputPage = () => {
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Counter</S.Title>
             <S.ExampleWrapper>
-              <BasicInputExample />
+              <InputCounterExample />
             </S.ExampleWrapper>
+            <InputCounterCode />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Tooltip</S.Title>
