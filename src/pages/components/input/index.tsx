@@ -61,7 +61,7 @@ const InputPage = () => {
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Tooltip</S.Title>
-            <S.Description>TODO: scroll position description</S.Description>
+            <S.Description>{`You can specify the tooltip for when in error state and when in valid state, and it is recommended to use it along with the <Input.ErrorMessage /> component.`}</S.Description>
             <S.ExampleWrapper>
               <TooltipExample />
             </S.ExampleWrapper>
