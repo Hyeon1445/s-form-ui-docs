@@ -5,6 +5,8 @@ import * as S from '@components/common/style/common.style'
 import Table from '@components/common/table'
 import BasicInputCode from '@components/input/BasicInputCode'
 import BasicInputExample from '@components/input/BasicInputExample'
+import CustomInputCode from '@components/input/CustomInputCode'
+import CustomInputExample from '@components/input/CustomInputExample'
 import ErrorMessageCode from '@components/input/ErrorMessageCode'
 import ErrorMessageExample from '@components/input/ErrorMessageExample'
 import InputCounterCode from '@components/input/InputCounterCode'
@@ -61,8 +63,9 @@ const InputPage = () => {
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Custom Style</S.Title>
             <S.ExampleWrapper>
-              <BasicInputExample />
+              <CustomInputExample />
             </S.ExampleWrapper>
+            <CustomInputCode />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input />`}</S.Title>
