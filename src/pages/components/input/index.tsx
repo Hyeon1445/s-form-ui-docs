@@ -53,6 +53,7 @@ const InputPage = () => {
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Counter</S.Title>
+            <S.Description>{`<Input.Counter/> represents the character count. The counter is more useful when used with yup's max condition in text type input.`}</S.Description>
             <S.ExampleWrapper>
               <InputCounterExample />
             </S.ExampleWrapper>
