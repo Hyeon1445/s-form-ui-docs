@@ -26,7 +26,13 @@ const InputPage = () => {
       <Layout page={PageEnum.Input}>
         <Stack direction="col" gap="1rem">
           <S.Title>Input</S.Title>
-          <S.Description>TODO: description</S.Description>
+          <S.Description>
+            When you define a yup validation schema in the Form component and
+            assign the same field name to the name props of the Input, each
+            error message appears for the condition. You can custom the style of
+            each component and the position of the error message, and you can
+            also use a tooltip to display the error message.
+          </S.Description>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Basic Input</S.Title>
             <S.ExampleWrapper>
