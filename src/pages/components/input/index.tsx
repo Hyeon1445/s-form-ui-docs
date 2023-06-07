@@ -10,6 +10,8 @@ import ErrorMessageExample from '@components/input/ErrorMessageExample'
 import InputCounterCode from '@components/input/InputCounterCode'
 import InputCounterExample from '@components/input/InputCounterExample'
 import { ERROR_MESSAGE_PROPS, LABEL_PROPS } from '@components/input/PropsData'
+import TooltipCode from '@components/input/TooltipCode'
+import TooltipExample from '@components/input/TooltipExample'
 import Head from 'next/head'
 import { Stack } from 's-form-ui'
 
@@ -50,9 +52,11 @@ const InputPage = () => {
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Tooltip</S.Title>
+            <S.Description>TODO: scroll position description</S.Description>
             <S.ExampleWrapper>
-              <BasicInputExample />
+              <TooltipExample />
             </S.ExampleWrapper>
+            <TooltipCode />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Custom Style</S.Title>
