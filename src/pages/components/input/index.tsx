@@ -16,6 +16,7 @@ import {
   FIELD_PROPS,
   INPUT_PROPS,
   LABEL_PROPS,
+  TOOLTIP_PROPS,
 } from '@components/input/PropsData'
 import TooltipCode from '@components/input/TooltipCode'
 import TooltipExample from '@components/input/TooltipExample'
@@ -109,8 +110,11 @@ const InputPage = () => {
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Tooltip />`}</S.Title>
-            <S.Description>TODO: tooltip description</S.Description>
-            <Table propsItems={BUTTON_PROPS} />
+            <S.Description>
+              Try displaying messages using a tooltip depending on the error or
+              valid state.
+            </S.Description>
+            <Table propsItems={TOOLTIP_PROPS} />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Counter />`}</S.Title>

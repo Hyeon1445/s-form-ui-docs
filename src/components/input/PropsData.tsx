@@ -126,3 +126,18 @@ export const FIELD_PROPS: Array<PropsItem> = [
     description: 'The style of input in error state',
   },
 ]
+
+export const TOOLTIP_PROPS: Array<PropsItem> = [
+  {
+    name: 'errorNode',
+    type: 'ReactNode',
+    default: '-',
+    description: 'The contents of the tooltip in error state',
+  },
+  {
+    name: 'validNode',
+    type: 'ReactNode',
+    default: '-',
+    description: 'The contents of the tooltip in valid state',
+  },
+]
