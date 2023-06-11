@@ -11,7 +11,11 @@ import ErrorMessageCode from '@components/input/ErrorMessageCode'
 import ErrorMessageExample from '@components/input/ErrorMessageExample'
 import InputCounterCode from '@components/input/InputCounterCode'
 import InputCounterExample from '@components/input/InputCounterExample'
-import { ERROR_MESSAGE_PROPS, LABEL_PROPS } from '@components/input/PropsData'
+import {
+  ERROR_MESSAGE_PROPS,
+  INPUT_PROPS,
+  LABEL_PROPS,
+} from '@components/input/PropsData'
 import TooltipCode from '@components/input/TooltipCode'
 import TooltipExample from '@components/input/TooltipExample'
 import Head from 'next/head'
@@ -77,7 +81,7 @@ const InputPage = () => {
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input />`}</S.Title>
             <S.Description>TODO: input description</S.Description>
-            <Table propsItems={BUTTON_PROPS} />
+            <Table propsItems={INPUT_PROPS} />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Label />`}</S.Title>

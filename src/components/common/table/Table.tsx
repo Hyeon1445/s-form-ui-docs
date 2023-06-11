@@ -1,5 +1,5 @@
 import * as S from '@components/common/table/Table.style'
-import { ReactNode } from 'react'
+import { CSSProperties, ReactNode } from 'react'
 
 export type PropsItem = {
   isRequired?: boolean
@@ -7,6 +7,7 @@ export type PropsItem = {
   type?: ReactNode
   default?: ReactNode
   description?: ReactNode
+  textAlign?: CSSProperties['textAlign']
 }
 
 type TableProps = {

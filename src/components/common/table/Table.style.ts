@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { CSSProperties } from 'react'
 
 export const TableWrapper = styled.div`
   overflow-x: auto;
@@ -28,7 +29,10 @@ export const TableRow = styled.tr`
   border-color: #00808020;
 `
 
-export const TableData = styled.td<{ isType?: boolean }>`
+export const TableData = styled.td<{
+  isType?: boolean
+  textAlign?: CSSProperties['textAlign']
+}>`
   padding: 1rem 0.5rem;
   white-space: pre-line;
   color: ${({ isType }) => isType && '#00808080'};
