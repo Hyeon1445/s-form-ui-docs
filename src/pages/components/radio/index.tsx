@@ -1,9 +1,10 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
-import { Button, Form, Radio, Stack } from 's-form-ui'
+import { Stack } from 's-form-ui'
 import { CSSProperties } from 'react'
-import * as yup from 'yup'
 import Head from 'next/head'
+import * as S from '@components/common/style/common.style'
+import BasicRadioExample from '@components/radio/BasicRadioExample'
 
 const RadioPage = () => {
   const checkedTabStyle: CSSProperties = {
@@ -15,96 +16,16 @@ const RadioPage = () => {
         <title>Radio</title>
       </Head>
       <Layout page={PageEnum.Radio}>
-        <Form
-          initialValues={{
-            radio: 'option1',
-            radio2: 'option2',
-            radio3: 'option1',
-            radio4: 'option1',
-          }}
-          style={{
-            width: '20rem',
-            border: '2px solid #f2f2f2',
-            padding: '1rem',
-          }}
-          validationSchema={yup.object().shape({
-            radio: yup.string(),
-            radio2: yup.string(),
-            radio3: yup.string(),
-            radio4: yup.string().test({
-              message: 'option2 is not allowed',
-              test: (value) => value !== 'option2',
-            }),
-          })}
-          onSubmit={(values) => console.log('submit', values)}
-        >
-          <Stack direction="col" gap="1rem">
-            <Radio name="radio">
-              <Radio.Label>radio</Radio.Label>
-              <Stack gap="0.5rem">
-                <Radio.Button value="option1" />
-                <Radio.Button value="option2" />
-                <Radio.Button value="option3" disabled />
-              </Stack>
-            </Radio>
-            <Radio name="radio2">
-              <Radio.Label>radio2</Radio.Label>
-              <Stack gap="0.5rem">
-                <Radio.Button />
-                <Radio.Button value="option2" disabled />
-                <Radio.Button value="option3" disabled />
-              </Stack>
-            </Radio>
-            <Radio name="radio3">
-              <Radio.Label>radio3</Radio.Label>
-              <Stack direction="col" gap="0.5rem" padding="0.5rem0">
-                <Radio.Option value="option1">
-                  <Radio.Button />
-                  option1
-                </Radio.Option>
-                <Radio.Option value="option2">
-                  <Radio.Button />
-                  option2
-                </Radio.Option>
-                <Radio.Option value="option3" disabled>
-                  <Radio.Button />
-                  option3
-                </Radio.Option>
-                <Radio.Option value="option4" disabled>
-                  <Radio.Button />
-                  option4
-                </Radio.Option>
-              </Stack>
-            </Radio>
-            <Radio name="radio4">
-              <Radio.Label>radio3 (option2 - not allowed)</Radio.Label>
-              <Stack direction="col" gap="0.5rem" padding="0.5rem0">
-                <Radio.Option value="option1" checkedStyle={checkedTabStyle}>
-                  option1
-                </Radio.Option>
-                <Radio.Option value="option2" checkedStyle={checkedTabStyle}>
-                  option2
-                </Radio.Option>
-                <Radio.Option
-                  value="option3"
-                  disabled
-                  checkedStyle={checkedTabStyle}
-                >
-                  option3
-                </Radio.Option>
-                <Radio.Option
-                  value="option4"
-                  disabled
-                  checkedStyle={checkedTabStyle}
-                >
-                  option4
-                </Radio.Option>
-              </Stack>
-              <Radio.ErrorMessage />
-            </Radio>
-            <Button style={{ width: '100%' }}>Submit</Button>
-          </Stack>
-        </Form>
+        <Stack direction="col" gap="1rem">
+          <S.Title>Radio</S.Title>
+          <S.Description>TODO: description</S.Description>
+        </Stack>
+        <Stack direction="col" gap="1rem" margin="3rem 0 0">
+          <S.Title>Basic Radio</S.Title>
+          <S.ExampleWrapper>
+            <BasicRadioExample />
+          </S.ExampleWrapper>
+        </Stack>
       </Layout>
     </>
   )
