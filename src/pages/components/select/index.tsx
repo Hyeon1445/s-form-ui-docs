@@ -5,8 +5,8 @@ import styled from '@emotion/styled'
 import { Button, Form, Stack, Select } from 's-form-ui'
 import * as S from '@components/common/style/common.style'
 import Head from 'next/head'
-import BasicInputExample from '@components/input/BasicInputExample'
-import BasicInputCode from '@components/input/BasicInputCode'
+import BasicSelectExample from '@components/select/BasicSelectExample'
+import BasicSelectCode from '@components/select/BasicSelectCode'
 
 const SelectPage = () => {
   return (
@@ -26,9 +26,9 @@ const SelectPage = () => {
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>Basic Input</S.Title>
             <S.ExampleWrapper>
-              <BasicInputExample />
+              <BasicSelectExample />
             </S.ExampleWrapper>
-            <BasicInputCode />
+            <BasicSelectCode />
           </Stack>
         </Stack>
         <Form

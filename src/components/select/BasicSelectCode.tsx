@@ -1,0 +1,61 @@
+import CodeHighlighter from '@components/common/code-highlighter/code-highlighter'
+
+const BasicSelectCode = () => {
+  const pre = `import { Button, Form, Input, Select, Stack } from 's-form-ui'
+import * as yup from 'yup'
+  
+const BasicSelectExample = () => {
+  const initialValues = {
+    select: '',
+  }
+  const errorMessage = 'This field is required!'
+  const validationSchema = yup.object({
+    select: yup.string().required(errorMessage),
+  })
+  
+  const formStyle = {
+    width: '100%',
+    minWidth: '15rem',
+    boxShadow: '0px 1px 20px rgba(0, 0, 0, 0.1)',
+    backgroundColor: 'white',
+    borderRadius: '0.5rem',
+    padding: '1rem',
+  }
+  
+  return (
+    <Form
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      style={formStyle}
+      onSubmit={(values) => console.log('submit', values)}
+    >
+      <Stack direction="col" gap="1rem">`
+
+  const code = `        <Select name="select">
+          <Select.Label>*Basic Select</Select.Label>
+          <Select.Button />
+          <Select.ErrorMessage />
+          <Select.Options>
+            <Select.Option value="name1">name1</Select.Option>
+            <Select.Option value="name2">name2</Select.Option>
+            <Select.Option value="name3">name3</Select.Option>
+            <Select.Option value="name4">name4</Select.Option>
+            <Select.Option value="name5">name5</Select.Option>
+          </Select.Options>
+        </Select>`
+
+  const post = `        <Button style={{ width: '100%' }} type="reset">
+          Reset
+        </Button>
+        <Button style={{ width: '100%' }}>Submit</Button>
+      </Stack>
+    </Form>
+  )
+}
+
+export default BasicSelectExample`
+
+  return <CodeHighlighter pre={pre} code={code} post={post} />
+}
+
+export default BasicSelectCode
