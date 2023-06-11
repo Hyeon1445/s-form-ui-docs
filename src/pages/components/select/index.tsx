@@ -3,7 +3,10 @@ import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import * as yup from 'yup'
 import styled from '@emotion/styled'
 import { Button, Form, Stack, Select } from 's-form-ui'
+import * as S from '@components/common/style/common.style'
 import Head from 'next/head'
+import BasicInputExample from '@components/input/BasicInputExample'
+import BasicInputCode from '@components/input/BasicInputCode'
 
 const SelectPage = () => {
   return (
@@ -12,6 +15,22 @@ const SelectPage = () => {
         <title>Select</title>
       </Head>
       <Layout page={PageEnum.Select}>
+        <Stack direction="col" gap="1rem">
+          <S.Title>Select</S.Title>
+          <S.Description>
+            {`When you define a yup validation schema in the Form component and
+            assign the same field name to the name props of the Select, each
+            error message appears on <ErrorMessage /> component for the condition. 
+            Also you can use a <Select /> component as a <Menu /> without popover.`}
+          </S.Description>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>Basic Input</S.Title>
+            <S.ExampleWrapper>
+              <BasicInputExample />
+            </S.ExampleWrapper>
+            <BasicInputCode />
+          </Stack>
+        </Stack>
         <Form
           initialValues={{ name: '', movie: '', disabled: 'disabled' }}
           style={{

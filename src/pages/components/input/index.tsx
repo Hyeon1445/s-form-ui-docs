@@ -1,4 +1,3 @@
-import { BUTTON_PROPS } from '@components/button/PropsData'
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import * as S from '@components/common/style/common.style'
