@@ -6,6 +6,7 @@ import Head from 'next/head'
 import * as S from '@components/common/style/common.style'
 import BasicRadioExample from '@components/radio/BasicRadioExample'
 import BasicRadioCode from '@components/radio/BasicSelectCode'
+import CustomRadioExample from '@components/radio/CustomRadioExample'
 
 const RadioPage = () => {
   const checkedTabStyle: CSSProperties = {
@@ -27,6 +28,12 @@ const RadioPage = () => {
             <BasicRadioExample />
           </S.ExampleWrapper>
           <BasicRadioCode />
+        </Stack>
+        <Stack direction="col" gap="1rem" margin="3rem 0 0">
+          <S.Title>Tab</S.Title>
+          <S.ExampleWrapper>
+            <CustomRadioExample />
+          </S.ExampleWrapper>
         </Stack>
       </Layout>
     </>
