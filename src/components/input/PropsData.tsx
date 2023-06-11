@@ -2,7 +2,8 @@ import { PropsItem } from '@components/common/table/Table'
 import styled from '@emotion/styled'
 
 const InputType = styled.div`
-  min-width: 10rem;
+  min-width: 8rem;
+  text-align: left;
 `
 
 const InputChildren = styled.div`
