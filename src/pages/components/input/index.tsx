@@ -101,7 +101,10 @@ const InputPage = () => {
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.ErrorMessage />`}</S.Title>
-            <S.Description>TODO: error description</S.Description>
+            <S.Description>
+              {`<Input.ErrorMessage /> component is more powerful when used with yup (validationSchema props of Form component). Also,
+              try customizing the position or style, or using it with a <Input.Tooltip />.`}
+            </S.Description>
             <Table propsItems={ERROR_MESSAGE_PROPS} />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
