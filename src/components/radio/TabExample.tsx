@@ -41,7 +41,7 @@ const TabExample = () => {
 
   const disabledOptionStyle: CSSProperties = {
     backgroundColor: '#f2f2f2',
-    border: '1px solid #757575',
+    border: '1px solid #f2f2f2',
     color: '#757575',
   }
 
