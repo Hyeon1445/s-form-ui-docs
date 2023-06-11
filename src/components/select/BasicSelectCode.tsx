@@ -7,10 +7,12 @@ import * as yup from 'yup'
 const BasicSelectExample = () => {
   const initialValues = {
     select: '',
+    disabled: 'option1',
   }
   const errorMessage = 'This field is required!'
   const validationSchema = yup.object({
     select: yup.string().required(errorMessage),
+    disabled: yup.string(),
   })
   
   const formStyle = {
@@ -36,11 +38,19 @@ const BasicSelectExample = () => {
           <Select.Button />
           <Select.ErrorMessage />
           <Select.Options>
-            <Select.Option value="name1">name1</Select.Option>
-            <Select.Option value="name2">name2</Select.Option>
-            <Select.Option value="name3">name3</Select.Option>
-            <Select.Option value="name4">name4</Select.Option>
-            <Select.Option value="name5">name5</Select.Option>
+            <Select.Option value="option1">option1</Select.Option>
+            <Select.Option value="option2">option2</Select.Option>
+            <Select.Option value="option3">option3</Select.Option>
+            <Select.Option value="option4">option4</Select.Option>
+            <Select.Option value="option5">option5</Select.Option>
+          </Select.Options>
+        </Select>
+        
+        <Select name="disabled" disabled>
+          <Select.Label>disabled</Select.Label>
+          <Select.Button />
+          <Select.Options>
+            <Select.Option value="option1">option1</Select.Option>
           </Select.Options>
         </Select>`
 
