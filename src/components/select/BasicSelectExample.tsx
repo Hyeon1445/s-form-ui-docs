@@ -1,4 +1,4 @@
-import { Button, Form, Input, Select, Stack } from 's-form-ui'
+import { Button, Form, Select, Stack } from 's-form-ui'
 import * as yup from 'yup'
 
 const BasicSelectExample = () => {

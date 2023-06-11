@@ -1,7 +1,7 @@
 import CodeHighlighter from '@components/common/code-highlighter/code-highlighter'
 
 const BasicSelectCode = () => {
-  const pre = `import { Button, Form, Input, Select, Stack } from 's-form-ui'
+  const pre = `import { Button, Form, Select, Stack } from 's-form-ui'
 import * as yup from 'yup'
   
 const BasicSelectExample = () => {
