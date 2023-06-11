@@ -5,6 +5,7 @@ import { CSSProperties } from 'react'
 import Head from 'next/head'
 import * as S from '@components/common/style/common.style'
 import BasicRadioExample from '@components/radio/BasicRadioExample'
+import BasicRadioCode from '@components/radio/BasicSelectCode'
 
 const RadioPage = () => {
   const checkedTabStyle: CSSProperties = {
@@ -25,6 +26,7 @@ const RadioPage = () => {
           <S.ExampleWrapper>
             <BasicRadioExample />
           </S.ExampleWrapper>
+          <BasicRadioCode />
         </Stack>
       </Layout>
     </>
