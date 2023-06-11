@@ -1,17 +1,13 @@
 import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import { Stack } from 's-form-ui'
-import { CSSProperties } from 'react'
 import Head from 'next/head'
 import * as S from '@components/common/style/common.style'
 import BasicRadioExample from '@components/radio/BasicRadioExample'
 import BasicRadioCode from '@components/radio/BasicSelectCode'
-import CustomRadioExample from '@components/radio/CustomRadioExample'
+import TabExample from '@components/radio/TabExample'
 
 const RadioPage = () => {
-  const checkedTabStyle: CSSProperties = {
-    backgroundColor: 'yellow',
-  }
   return (
     <>
       <Head>
@@ -32,7 +28,7 @@ const RadioPage = () => {
         <Stack direction="col" gap="1rem" margin="3rem 0 0">
           <S.Title>Tab</S.Title>
           <S.ExampleWrapper>
-            <CustomRadioExample />
+            <TabExample />
           </S.ExampleWrapper>
         </Stack>
       </Layout>
