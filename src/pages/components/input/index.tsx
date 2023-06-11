@@ -34,8 +34,8 @@ const InputPage = () => {
           <S.Description>
             When you define a yup validation schema in the Form component and
             assign the same field name to the name props of the Input, each
-            error message appears for the condition. You can custom the style of
-            each component and the position of the error message, and you can
+            error message appears for the condition. You can customize the style
+            of each component and the position of the error message, and you can
             also use a tooltip to display the error message.
           </S.Description>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
@@ -93,7 +93,7 @@ const InputPage = () => {
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Field />`}</S.Title>
             <S.Description>
-              Use Field component when you want to custom the error message
+              Use Field component when you want to customize the error message
               position or input style. And props of the native input are also
               available.
             </S.Description>
