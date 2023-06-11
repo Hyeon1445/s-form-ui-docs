@@ -12,6 +12,7 @@ import ErrorMessageExample from '@components/input/ErrorMessageExample'
 import InputCounterCode from '@components/input/InputCounterCode'
 import InputCounterExample from '@components/input/InputCounterExample'
 import {
+  COUNTER_PROPS,
   ERROR_MESSAGE_PROPS,
   FIELD_PROPS,
   INPUT_PROPS,
@@ -118,8 +119,8 @@ const InputPage = () => {
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Counter />`}</S.Title>
-            <S.Description>TODO: tooltip description</S.Description>
-            <Table propsItems={BUTTON_PROPS} />
+            <S.Description>{`Add <Input.Counter /> if you want to count the length.`}</S.Description>
+            <Table propsItems={COUNTER_PROPS} />
           </Stack>
         </Stack>
       </Layout>

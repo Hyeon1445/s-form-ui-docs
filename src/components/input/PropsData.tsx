@@ -141,3 +141,36 @@ export const TOOLTIP_PROPS: Array<PropsItem> = [
     description: 'The contents of the tooltip in valid state',
   },
 ]
+
+const DefaultFormatStyle = styled.div`
+  min-width: 20rem;
+`
+
+export const COUNTER_PROPS: Array<PropsItem> = [
+  {
+    name: 'style',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The style of the input counter',
+  },
+  {
+    name: 'max',
+    type: 'number',
+    default: '0',
+    description: `Max length of input. And It's recommended to use max props with yup.number().max()`,
+  },
+  {
+    name: 'format',
+    type: (
+      <DefaultFormatStyle>
+        {'(count: number, max?: number) => string'}
+      </DefaultFormatStyle>
+    ),
+    default: (
+      <DefaultFormatStyle>
+        {'(count, max) => `${count}/${max}`'}
+      </DefaultFormatStyle>
+    ),
+    description: `You can define the format of the counter.`,
+  },
+]
