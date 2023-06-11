@@ -80,7 +80,9 @@ const InputPage = () => {
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input />`}</S.Title>
-            <S.Description>TODO: input description</S.Description>
+            <S.Description>
+              Props of the native input are also available
+            </S.Description>
             <Table propsItems={INPUT_PROPS} />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
