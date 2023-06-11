@@ -6,6 +6,7 @@ import * as S from '@components/common/style/common.style'
 import BasicRadioExample from '@components/radio/BasicRadioExample'
 import BasicRadioCode from '@components/radio/BasicSelectCode'
 import TabExample from '@components/radio/TabExample'
+import TabCode from '@components/radio/TabCode'
 
 const RadioPage = () => {
   return (
@@ -30,6 +31,7 @@ const RadioPage = () => {
           <S.ExampleWrapper>
             <TabExample />
           </S.ExampleWrapper>
+          <TabCode />
         </Stack>
       </Layout>
     </>
