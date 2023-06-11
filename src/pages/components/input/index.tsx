@@ -94,7 +94,8 @@ const InputPage = () => {
             <S.Title>{`Props of <Input.Field />`}</S.Title>
             <S.Description>
               Use Field component when you want to custom the error message
-              position or input style
+              position or input style. And props of the native input are also
+              available.
             </S.Description>
             <Table propsItems={FIELD_PROPS} />
           </Stack>
