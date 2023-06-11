@@ -8,6 +8,8 @@ import BasicSelectExample from '@components/select/BasicSelectExample'
 import BasicSelectCode from '@components/select/BasicSelectCode'
 import MenuExample from '@components/select/MenuExample'
 import MenuCode from '@components/select/MenuCode'
+import CustomSelectExample from '@components/select/CustomSelectExample'
+import CustomSelectCode from '@components/select/CustomSelectCode'
 
 const SelectPage = () => {
   return (
@@ -25,7 +27,7 @@ const SelectPage = () => {
             Also you can use a <Select /> component as a <Menu /> without popover.`}
           </S.Description>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
-            <S.Title>Basic Input</S.Title>
+            <S.Title>Basic Select</S.Title>
             <S.ExampleWrapper>
               <BasicSelectExample />
             </S.ExampleWrapper>
@@ -37,6 +39,13 @@ const SelectPage = () => {
               <MenuExample />
             </S.ExampleWrapper>
             <MenuCode />
+          </Stack>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>Custom Style</S.Title>
+            <S.ExampleWrapper>
+              <CustomSelectExample />
+            </S.ExampleWrapper>
+            <CustomSelectCode />
           </Stack>
         </Stack>
       </Layout>
