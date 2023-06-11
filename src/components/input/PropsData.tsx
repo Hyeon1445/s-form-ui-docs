@@ -80,7 +80,7 @@ export const ERROR_MESSAGE_PROPS: Array<PropsItem> = [
   },
 ]
 
-export const Field_PROPS: Array<PropsItem> = [
+export const FIELD_PROPS: Array<PropsItem> = [
   {
     isRequired: true,
     name: 'name',
