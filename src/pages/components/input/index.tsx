@@ -13,6 +13,7 @@ import InputCounterCode from '@components/input/InputCounterCode'
 import InputCounterExample from '@components/input/InputCounterExample'
 import {
   ERROR_MESSAGE_PROPS,
+  Field_PROPS,
   INPUT_PROPS,
   LABEL_PROPS,
 } from '@components/input/PropsData'
@@ -87,13 +88,15 @@ const InputPage = () => {
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Label />`}</S.Title>
-            <S.Description>TODO: label description</S.Description>
             <Table propsItems={LABEL_PROPS} />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.Field />`}</S.Title>
-            <S.Description>TODO: field description</S.Description>
-            <Table propsItems={BUTTON_PROPS} />
+            <S.Description>
+              Use Field component when you want to custom the error message
+              position or input style
+            </S.Description>
+            <Table propsItems={Field_PROPS} />
           </Stack>
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Input.ErrorMessage />`}</S.Title>

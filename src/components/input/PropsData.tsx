@@ -79,3 +79,49 @@ export const ERROR_MESSAGE_PROPS: Array<PropsItem> = [
     description: 'The style of error message',
   },
 ]
+
+export const Field_PROPS: Array<PropsItem> = [
+  {
+    isRequired: true,
+    name: 'name',
+    type: 'string',
+    default: '-',
+    description:
+      'The name of the field should be the same as the field name of the initial value and validation schema.',
+  },
+  {
+    name: 'type',
+    type: (
+      <InputType>
+        {`"text"`}
+        <br />
+        {`| "password"`}
+        <br />
+        {`| "number"`}
+        <br />
+        {`| "color"`}
+      </InputType>
+    ),
+    default: `"text"`,
+    description: 'The type of input field',
+    textAlign: 'left',
+  },
+  {
+    name: 'style',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The style of the input.',
+  },
+  {
+    name: 'disabledStyle',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The style of the disabled input.',
+  },
+  {
+    name: 'errorStyle',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The style of input in error state',
+  },
+]
