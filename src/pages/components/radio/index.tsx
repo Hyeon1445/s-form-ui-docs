@@ -7,6 +7,7 @@ import BasicRadioExample from '@components/radio/BasicRadioExample'
 import BasicRadioCode from '@components/radio/BasicSelectCode'
 import TabExample from '@components/radio/TabExample'
 import TabCode from '@components/radio/TabCode'
+import Table from '@components/common/table'
 
 const RadioPage = () => {
   return (

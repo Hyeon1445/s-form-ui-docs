@@ -10,6 +10,7 @@ import MenuExample from '@components/select/MenuExample'
 import MenuCode from '@components/select/MenuCode'
 import CustomSelectExample from '@components/select/CustomSelectExample'
 import CustomSelectCode from '@components/select/CustomSelectCode'
+import Table from '@components/common/table'
 
 const SelectPage = () => {
   return (
@@ -46,6 +47,11 @@ const SelectPage = () => {
               <CustomSelectExample />
             </S.ExampleWrapper>
             <CustomSelectCode />
+          </Stack>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>{`Props of <Select />`}</S.Title>
+            <S.Description>{`TODO: `}</S.Description>
+            <Table propsItems={[]} />
           </Stack>
         </Stack>
       </Layout>
