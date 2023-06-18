@@ -2,6 +2,7 @@ import Layout from '@components/common/layout'
 import { PageEnum } from '@components/common/layout/sidebar/Sidebar'
 import Head from 'next/head'
 import { Button, Checkbox, Form, Stack } from 's-form-ui'
+import * as S from '@components/common/style/common.style'
 import * as yup from 'yup'
 
 const CheckboxPage = () => {
@@ -11,6 +12,16 @@ const CheckboxPage = () => {
         <title>Checkbox</title>
       </Head>
       <Layout page={PageEnum.Checkbox}>
+        <Stack direction="col" gap="1rem">
+          <S.Title>Checkbox</S.Title>
+          <S.Description>
+            When you define a yup validation schema in the Form component and
+            assign the same field name to the name props of the Checkbox, each
+            error message appears for the condition. You can customize the style
+            of each component and the position of the error message, and you can
+            also group the checkbox by using {`<FieldArray />`}.
+          </S.Description>
+        </Stack>
         <Form
           initialValues={{ checkbox: [false, true, false, true, true] }}
           validationSchema={yup.object().shape({
