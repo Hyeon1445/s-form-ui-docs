@@ -20,17 +20,28 @@ const ArrayPage = () => {
             padding: '1rem',
           }}
           validationSchema={yup.object().shape({
-            inputs: yup.array().of(yup.string().required('필수!!')),
+            inputs: yup
+              .array()
+              .of(yup.mixed())
+              .test({
+                message: 'All inputs are required!',
+                test: (items) => items?.every((item) => !!item),
+              }),
           })}
           onSubmit={(values) => console.log('submit', values)}
         >
-          {({ values }) => (
+          {({ values, errors }) => (
             <>
               <Title>FORM</Title>
               <FieldArray name="inputs">
-                {values.inputs?.map((input: string, index: number) => (
-                  <Input name={`inputs.${index}`} key={index} />
-                ))}
+                {values.inputs?.map((value: string, index: number) => {
+                  return (
+                    <Input key={index} name={`inputs[${index}]`}>
+                      <Input.Field></Input.Field>
+                    </Input>
+                  )
+                })}
+                <FieldArray.ErrorMessage />
                 <FieldArray.PushButton value={'push'} />
                 <FieldArray.SwapButton index1={1} index2={3} />
                 <FieldArray.MoveButton from={2} to={4} />
@@ -41,8 +52,8 @@ const ArrayPage = () => {
                 <FieldArray.ReplaceButton index={0} value={'replace'} />
               </FieldArray>
               <Button style={{ width: '100%' }}>Submit</Button>
-              <Button type="button" style={{ width: '100%' }} disabled>
-                Disabled
+              <Button type="reset" style={{ width: '100%' }}>
+                reset
               </Button>
             </>
           )}
