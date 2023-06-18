@@ -8,7 +8,11 @@ import BasicRadioCode from '@components/radio/BasicSelectCode'
 import TabExample from '@components/radio/TabExample'
 import TabCode from '@components/radio/TabCode'
 import Table from '@components/common/table'
-import { RADIO_OPTION_PROPS, RADIO_PROPS } from '@components/radio/PropsData'
+import {
+  RADIO_BUTTON_PROPS,
+  RADIO_OPTION_PROPS,
+  RADIO_PROPS,
+} from '@components/radio/PropsData'
 
 const RadioPage = () => {
   return (
@@ -43,6 +47,11 @@ const RadioPage = () => {
           <S.Title>{`Props of <Radio.Option />`}</S.Title>
           <S.Description>{`it serves as a label`}</S.Description>
           <Table propsItems={RADIO_OPTION_PROPS} />
+        </Stack>
+        <Stack direction="col" gap="1rem" margin="3rem 0 0">
+          <S.Title>{`Props of <Radio.Button />`}</S.Title>
+          <S.Description>{`Props of the native input are also available. The circle radio check button and it's optional. if you want to use the radio as a tab, you can skip the use of the button component.`}</S.Description>
+          <Table propsItems={RADIO_BUTTON_PROPS} />
         </Stack>
       </Layout>
     </>

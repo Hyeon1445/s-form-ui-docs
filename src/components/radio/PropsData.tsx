@@ -74,12 +74,39 @@ export const RADIO_OPTION_PROPS: Array<PropsItem> = [
     name: 'value',
     type: 'string | number | readonly string[] | undefined',
     default: '-',
-    description: 'The value of option',
+    description: 'The value of an option',
   },
   {
     name: 'onChange',
     type: '(value?: string | number | readonly string[]) => void',
     default: '-',
     description: 'Triggered on change',
+  },
+]
+
+export const RADIO_BUTTON_PROPS: Array<PropsItem> = [
+  {
+    name: 'style',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The style of radio button',
+  },
+  {
+    name: 'checkedStyle',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The checked style of radio button',
+  },
+  {
+    name: 'disabledStyle',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The disabled style of radio button',
+  },
+  {
+    name: 'disabledCheckedStyle',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The disabled checked style of radio button',
   },
 ]
