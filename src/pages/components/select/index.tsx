@@ -17,6 +17,7 @@ import {
   SELECT_OPTION_PROPS,
   SELECT_PROPS,
 } from '@components/select/PropsData'
+import { ERROR_MESSAGE_PROPS, LABEL_PROPS } from '@components/input/PropsData'
 
 const SelectPage = () => {
   return (
@@ -72,6 +73,17 @@ const SelectPage = () => {
             <S.Title>{`Props of <Select.Option />`}</S.Title>
             <S.Description>{`The <Select.Option /> is including label and value of a option`}</S.Description>
             <Table propsItems={SELECT_OPTION_PROPS} />
+          </Stack>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>{`Props of <Select.Label />`}</S.Title>
+            <Table propsItems={LABEL_PROPS} />
+          </Stack>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>{`Props of <Select.ErrorMessage />`}</S.Title>
+            <S.Description>
+              {`<Select.ErrorMessage /> component is more powerful when used with yup (validationSchema props of Form component).`}
+            </S.Description>
+            <Table propsItems={ERROR_MESSAGE_PROPS} />
           </Stack>
         </Stack>
       </Layout>
