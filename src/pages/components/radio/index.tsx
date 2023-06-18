@@ -8,7 +8,7 @@ import BasicRadioCode from '@components/radio/BasicSelectCode'
 import TabExample from '@components/radio/TabExample'
 import TabCode from '@components/radio/TabCode'
 import Table from '@components/common/table'
-import { RADIO_PROPS } from '@components/radio/PropsData'
+import { RADIO_OPTION_PROPS, RADIO_PROPS } from '@components/radio/PropsData'
 
 const RadioPage = () => {
   return (
@@ -38,6 +38,11 @@ const RadioPage = () => {
         <Stack direction="col" gap="1rem" margin="3rem 0 0">
           <S.Title>{`Props of <Radio />`}</S.Title>
           <Table propsItems={RADIO_PROPS} />
+        </Stack>
+        <Stack direction="col" gap="1rem" margin="3rem 0 0">
+          <S.Title>{`Props of <Radio.Option />`}</S.Title>
+          <S.Description>{`it serves as a label`}</S.Description>
+          <Table propsItems={RADIO_OPTION_PROPS} />
         </Stack>
       </Layout>
     </>

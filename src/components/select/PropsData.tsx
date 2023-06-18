@@ -10,17 +10,18 @@ export const SELECT_PROPS: Array<PropsItem> = [
       'The name of the field should be the same as the field name of the initial value and validation schema.',
   },
   {
-    name: 'disabled',
-    type: 'boolean',
-    default: 'false',
-    description: 'Deactivate the selector',
-  },
-  {
+    isRequired: true,
     name: 'children',
     type: 'ReactNode',
     default: '-',
     description:
       'The Content of Selector including Button, Options, Option, ErrorMessage',
+  },
+  {
+    name: 'disabled',
+    type: 'boolean',
+    default: 'false',
+    description: 'Deactivate the selector',
   },
   {
     name: 'style',
@@ -60,6 +61,7 @@ export const SELECT_BUTTON_PROPS: Array<PropsItem> = [
 
 export const SELECT_OPTIONS_PROPS: Array<PropsItem> = [
   {
+    isRequired: true,
     name: 'children',
     type: 'ReactNode',
     default: '-',
@@ -82,6 +84,7 @@ export const SELECT_OPTIONS_PROPS: Array<PropsItem> = [
 
 export const SELECT_OPTION_PROPS: Array<PropsItem> = [
   {
+    isRequired: true,
     name: 'children',
     type: 'ReactNode',
     default: '-',
