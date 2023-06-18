@@ -4,6 +4,8 @@ import Head from 'next/head'
 import { Button, Checkbox, Form, Stack } from 's-form-ui'
 import * as S from '@components/common/style/common.style'
 import * as yup from 'yup'
+import BasicCheckboxExample from '@components/checkbox/BasicCheckboxExample'
+import BasicCheckboxCode from '@components/checkbox/BasicCheckboxCode'
 
 const CheckboxPage = () => {
   return (
@@ -21,6 +23,13 @@ const CheckboxPage = () => {
             of each component and the position of the error message, and you can
             also group the checkbox by using {`<FieldArray />`}.
           </S.Description>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>Basic Radio</S.Title>
+            <S.ExampleWrapper>
+              <BasicCheckboxExample />
+            </S.ExampleWrapper>
+            <BasicCheckboxCode />
+          </Stack>
         </Stack>
         <Form
           initialValues={{ checkbox: [false, true, false, true, true] }}
