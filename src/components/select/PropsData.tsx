@@ -32,16 +32,16 @@ export const SELECT_PROPS: Array<PropsItem> = [
 
 export const SELECT_BUTTON_PROPS: Array<PropsItem> = [
   {
-    name: 'style',
-    type: 'ReactNode',
-    default: '{}',
-    description: 'The Style of Select Button',
-  },
-  {
     name: 'icon',
     type: 'ReactNode',
     default: `<span>▾</span>`,
     description: 'In the open state, the icon rotates 180 degrees.',
+  },
+  {
+    name: 'style',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The Style of Select Button',
   },
   {
     name: 'disabledStyle',
@@ -55,5 +55,27 @@ export const SELECT_BUTTON_PROPS: Array<PropsItem> = [
     type: 'CSSProperties',
     default: `{}`,
     description: 'The style of the button in error state',
+  },
+]
+
+export const SELECT_OPTIONS_PROPS: Array<PropsItem> = [
+  {
+    name: 'children',
+    type: 'ReactNode',
+    default: '-',
+    description: 'Define options of Select here.',
+  },
+  {
+    name: 'style',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The Style of Options container',
+  },
+  {
+    name: 'isPopover',
+    type: 'boolean',
+    default: 'true',
+    description:
+      'If you want a dropdown selector, set isPopover to true. If you want a fixed menu, set isPopover to false',
   },
 ]
