@@ -72,3 +72,36 @@ export const CHECKBOX_PROPS: Array<PropsItem> = [
     description: 'Triggered on selected value change',
   },
 ]
+
+export const CHECKBOX_BUTTON_PROPS: Array<PropsItem> = [
+  {
+    name: 'size',
+    type: `CSSProperties['width']`,
+    default: '1.25rem',
+    description: 'The size(width, height) of checkbox button',
+  },
+  {
+    name: 'color',
+    type: `CSSProperties['backgroundColor']`,
+    default: 'teal',
+    description: 'The theme color of checkbox',
+  },
+  {
+    name: 'borderColor',
+    type: `CSSProperties['borderColor']`,
+    default: '#757575',
+    description: 'The non-checked border color of checkbox',
+  },
+  {
+    name: 'disabledColor',
+    type: `CSSProperties['backgroundColor']`,
+    default: '#dbdbdb',
+    description: 'The background color of disabled checkbox',
+  },
+  {
+    name: 'disabledBorderColor',
+    type: `CSSProperties['borderColor']`,
+    default: '#dbdbdb',
+    description: 'The border color of non-checked disabled checkbox',
+  },
+]
