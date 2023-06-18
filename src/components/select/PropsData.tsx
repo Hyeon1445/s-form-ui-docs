@@ -29,3 +29,31 @@ export const SELECT_PROPS: Array<PropsItem> = [
     description: 'The Style of Select Container',
   },
 ]
+
+export const SELECT_BUTTON_PROPS: Array<PropsItem> = [
+  {
+    name: 'style',
+    type: 'ReactNode',
+    default: '{}',
+    description: 'The Style of Select Button',
+  },
+  {
+    name: 'icon',
+    type: 'ReactNode',
+    default: `<span>▾</span>`,
+    description: 'In the open state, the icon rotates 180 degrees.',
+  },
+  {
+    name: 'disabledStyle',
+    type: 'CSSProperties',
+    default: `{}`,
+    description:
+      'The Disabled Button style according to disabled props value of <Select />',
+  },
+  {
+    name: 'errorStyle',
+    type: 'CSSProperties',
+    default: `{}`,
+    description: 'The style of the button in error state',
+  },
+]

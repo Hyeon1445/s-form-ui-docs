@@ -11,7 +11,7 @@ import MenuCode from '@components/select/MenuCode'
 import CustomSelectExample from '@components/select/CustomSelectExample'
 import CustomSelectCode from '@components/select/CustomSelectCode'
 import Table from '@components/common/table'
-import { SELECT_PROPS } from '@components/select/PropsData'
+import { SELECT_BUTTON_PROPS, SELECT_PROPS } from '@components/select/PropsData'
 
 const SelectPage = () => {
   return (
@@ -52,6 +52,11 @@ const SelectPage = () => {
           <Stack direction="col" gap="1rem" margin="3rem 0 0">
             <S.Title>{`Props of <Select />`}</S.Title>
             <Table propsItems={SELECT_PROPS} />
+          </Stack>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>{`Props of <Select.Button />`}</S.Title>
+            <S.Description>{`The <Select.Button /> serves as the input field for the select`}</S.Description>
+            <Table propsItems={SELECT_BUTTON_PROPS} />
           </Stack>
         </Stack>
       </Layout>
