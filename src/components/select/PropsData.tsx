@@ -79,3 +79,42 @@ export const SELECT_OPTIONS_PROPS: Array<PropsItem> = [
       'If you want a dropdown selector, set isPopover to true. If you want a fixed menu, set isPopover to false',
   },
 ]
+
+export const SELECT_OPTION_PROPS: Array<PropsItem> = [
+  {
+    name: 'children',
+    type: 'ReactNode',
+    default: '-',
+    description: 'Define label of Select option here.',
+  },
+  {
+    name: 'value',
+    type: 'string | number',
+    default: '-',
+    description: 'The value of option',
+  },
+  {
+    name: 'style',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The Style of Option',
+  },
+  {
+    name: 'hoverStyle',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The  hover style of Option',
+  },
+  {
+    name: 'selectedOptionStyle',
+    type: 'CSSProperties',
+    default: '{}',
+    description: 'The selected option style',
+  },
+  {
+    name: 'onChange',
+    type: '(value?: string | number) => void',
+    default: '-',
+    description: 'Triggered on selected value change',
+  },
+]

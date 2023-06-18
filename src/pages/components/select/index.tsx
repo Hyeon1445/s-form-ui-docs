@@ -14,6 +14,7 @@ import Table from '@components/common/table'
 import {
   SELECT_BUTTON_PROPS,
   SELECT_OPTIONS_PROPS,
+  SELECT_OPTION_PROPS,
   SELECT_PROPS,
 } from '@components/select/PropsData'
 
@@ -66,6 +67,11 @@ const SelectPage = () => {
             <S.Title>{`Props of <Select.Options />`}</S.Title>
             <S.Description>{`The <Select.Options /> is container of options and it serves as dropdown or fixed menu container`}</S.Description>
             <Table propsItems={SELECT_OPTIONS_PROPS} />
+          </Stack>
+          <Stack direction="col" gap="1rem" margin="3rem 0 0">
+            <S.Title>{`Props of <Select.Option />`}</S.Title>
+            <S.Description>{`The <Select.Option /> is including label and value of a option`}</S.Description>
+            <Table propsItems={SELECT_OPTION_PROPS} />
           </Stack>
         </Stack>
       </Layout>
